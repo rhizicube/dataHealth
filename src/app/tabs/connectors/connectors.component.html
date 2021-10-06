@@ -1,0 +1,81 @@
+<div class="container" style="width: 100%;" >
+    <div class="row"style="padding: 0;">
+        <div class="col-lg-4" >
+            <h5>Source</h5>
+            <!-- <div class="card-deck card-deck-left mt-5"> -->
+                
+        <ng-container *ngFor = "let s of source" style="position: absolute;
+        left: 150px;">
+            <div class="col-10"> 
+                
+                <div class="card" id="div1" > 
+                    
+                    <div class="card-body" style="height: 70px;">
+                        <h6>{{s.title}} </h6>
+                        <p>{{s.description}} </p>
+                        <p style="font-size: small; position:absolute; top:0; right:0">{{s.value }} </p>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </ng-container>
+    </div>
+   
+    
+    <div  class="col-lg-4" id="div2" style="display: flex;
+    justify-content: center;align-items: center;" >
+        <div class="image" style="position: absolute; ">
+            
+        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
+        style="border-radius: 100px; height: 100px; width : 100px; " />
+        
+    </div>
+</div>
+
+    <div class="col-lg-4" style="margin-right: 0px;">
+        <h5>Destination</h5>
+        <ng-container *ngFor = "let d of destination"  style="position: absolute;
+        right: 150px;">
+            <div class="col-10"> 
+                <div class="card" > 
+                    <div class="card-body" style="height: 70px;">
+                        <h6>{{d.title}} </h6>
+                        <p>{{d.description}} </p>
+                        <img src="../../../assets/images/logo.svg">
+                        <p style="font-size: small; position:absolute; top:0; right:0">{{d.value }} </p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    <!-- <div class="div1">
+        
+    </div>
+    <div class="div2">
+        
+    </div>
+    <div class="div3">
+        
+    </div>
+    <div class="div4">
+        
+    </div>
+    <div class="div5">
+        
+    </div>
+    <div class="div6">
+        
+    </div>
+    <div class="div7">
+        
+    </div>
+    <div class="div8">
+        
+    </div>
+     -->
+    </div>
+</div>

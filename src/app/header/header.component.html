@@ -1,0 +1,75 @@
+<div class="container-fluid"style = "width: 100% ; margin-left: 0;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light"  style = "width: 100%" >
+    <div class="container-fluid" style = "width: 100%">
+    
+        <div class="navbar-header" >
+          <img src="https://aniportalimages.s3.amazonaws.com/media/details/unnamed_1_cHs1lps_UNVL2WK.jpg" 
+          style="height: 80px; width: 150px"/>
+            <!-- <a routerLink="/" class="navbar-brand" 
+            style="color: black; font-size: large; font-weight: bold; font-style: italic;">netCore</a> -->
+        </div>
+        <div class="collapse navbar-collapse">
+            
+              
+              <div class="input-group" >
+                <!-- <div class="form-outline"  > -->
+                  <input type="search" class="form-control" />
+                  
+                <!-- </div> -->
+                <button  class="btn btn-primary" >
+                  <span class="material-icons">
+                    search
+                    </span>
+                </button>
+              </div>
+                
+              <div ngbDropdown>
+                <button class="btn btn-secondary" id="gfg" 
+                        ngbDropdownToggle>side drop</button>
+                <div ngbDropdownMenu="gfg">
+                  <button ngbDropdownItem>detail1</button>
+                  <button ngbDropdownItem>detail1</button>
+                  <button ngbDropdownItem>detail1</button>
+                </div>
+              </div>
+            
+           
+            
+               
+            
+
+        </div>
+
+
+    </div>
+</nav>
+
+
+<div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar" >
+
+    <ul class="nav flex-column text-white w-100">
+      
+     
+        
+      <a href="#" class="nav-link p text-white ">Cutomers
+      </a>
+     
+      <br>
+      <a href="#" class="nav-link h4 text-white ">DashBoard
+      </a>
+      <br>
+        <a href="#" class="nav-link p text-white ">Data Health
+        </a>
+      
+        <br>
+        
+        <a href="#" class="nav-link p text-white ">Business Insights
+        </a>
+        <br>
+      <!-- <li href="#" class="nav-link">
+        <span class="mx-2">Contact</span>
+      </li> -->
+    </ul>
+  </div>
+</div>
+  <!-- <router-outlet></router-outlet> -->

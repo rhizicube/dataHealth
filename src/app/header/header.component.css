@@ -1,0 +1,68 @@
+.navbar.navbar-expand-lg.navbar-dark.bg-light{
+  height: 50px;
+  flex: content;
+    
+    
+  box-shadow: 0 2px 5px grey;
+}
+.mx-2{
+  color: white;
+}
+a:hover {
+  cursor:grabbing;
+  background-color: lightblue !important;
+}
+.collapse.navbar-collapse{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+.btn.btn-warning{
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+.form-control{
+  border-radius: 10px;
+}
+.side-navbar {
+    width: 15%;
+    height: 100%;
+    flex: content;
+    position: absolute;
+    margin-left: -300px;
+    background-color: blue;
+    transition: 0.5s;
+  }
+  
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #ffffff26;
+  }
+  
+  /* .my-container {
+    transition: 0.4s;
+  }
+   */
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 180px;
+  }
+  
+  /* #menu-btn {
+    background-color: #100901;
+    color: #fff;
+    margin-left: -62px;
+  } */
+  .input-group{
+    /* display: block; */
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+  }
