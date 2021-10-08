@@ -1,12 +1,16 @@
 <div class="container" style="width: 100%">
   <div class="row" style="padding: 0">
-    
     <div class="col-lg-4">
-      <div class="head" style="display:inline-flex;" >
-      <h5>Source</h5>
-      
-      <button class="btn btn-primary" style="height: 30px; margin-left:70px; padding-bottom:10px;">Add Sources</button>
-    </div>
+      <div class="head" style="display: inline-flex">
+        <h5>Source</h5>
+
+        <button
+          class="btn btn-primary"
+          style="height: 30px; margin-left: 70px; padding-bottom: 10px"
+        >
+          Add Sources
+        </button>
+      </div>
       <!-- <div class="card-deck card-deck-left mt-5"> -->
 
       <ng-container
@@ -14,11 +18,13 @@
         style="position: absolute; left: 150px"
       >
         <div class="col-10">
-          <div class="card" id="div1">
+          <div class="card" id="div1" >
             <div class="card-body" style="height: 70px">
-              <h6>{{ s.title }}</h6>
-              <p>{{ s.description }}</p>
-              <!-- <img [src] = "logos" style="background-image: logos"/> -->
+              <img [src]="s.logo"  style="position: absolute; top:5px; left:5px;"/>
+              <h6 style="font-size: medium; position:absolute; left:50px;">{{ s.title }}</h6>
+              <p style="font-size: smaller;position:absolute; top:45px;left:50px;">{{ s.description }}</p>
+              
+              <!-- <img src="assets/images/angular.png"> -->
               <!-- <svg-icon src="logos" [svgStyle]="{ 'width.px':90 }"></svg-icon> -->
               <p style="font-size: small; position: absolute; top: 0; right: 0">
                 {{ s.value }}
@@ -58,11 +64,20 @@
     </div>
 
     <div class="col-lg-4" style="margin-right: 0px">
-      
-      <div class="head" style="display:inline-flex;" >
+      <div class="head" style="display: inline-flex">
         <h5>Destination</h5>
-        
-        <button class="btn btn-primary" style="height: 30px; margin-left:40px;font-size:12px; padding-bottom:10px;">Add Destination</button>
+
+        <button
+          class="btn btn-primary"
+          style="
+            height: 30px;
+            margin-left: 40px;
+            font-size: 12px;
+            padding-bottom: 10px;
+          "
+        >
+          Add Destination
+        </button>
       </div>
       <ng-container
         *ngFor="let d of destination; let i = index"
@@ -71,20 +86,21 @@
         <div class="col-10">
           <div class="card">
             <div class="card-body" style="height: 70px">
-              <h6>{{ d.title }}</h6>
-              <p>{{ d.description }}</p>
-              <img src="../../../assets/images/logo.svg" />
-              <p style="font-size: small; position: absolute; top: 0; right: 0">
+              <img [src] = "d.logo" style="position: absolute; top:5px; left:5px;"/>
+              <h6 style="font-size: medium; position:absolute; left:50px;">{{ d.title }}</h6>
+              <p style="font-size: smaller;position:absolute; top:45px;left:50px;">{{ d.description }}</p>
+              
+              <p style="font-size: small; position: absolute; top: 0; right: 0" >
                 {{ d.value }}
               </p>
             </div>
           </div>
           <div class="div7" *ngIf="i < 2"></div>
-          <div class = "div9" *ngIf = "i == 2"></div>
-          <div class = "div10" *ngIf = "i == 3"></div>
+          <div class="div9" *ngIf="i == 2"></div>
+          <div class="div10" *ngIf="i == 3"></div>
           <div class="div8" *ngIf="i !== destination.length - 1 && i > 2"></div>
-          <div class = " div11" *ngIf = " i == 3"></div>
-          <div class = " div12" *ngIf = " i == 3"></div>
+          <div class="div11" *ngIf="i == 3"></div>
+          <div class="div12" *ngIf="i == 3"></div>
         </div>
       </ng-container>
     </div>

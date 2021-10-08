@@ -1,0 +1,38 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="16" fill="#E5E5E5"/>
+<g id="Dashboard_Data_Health" clip-path="url(#clip0)">
+<rect width="1440" height="900" transform="translate(-1338 -324)" fill="#F4F8FF"/>
+<g id="Group 18571">
+<g id="Group 18543">
+<g id="Group 18474">
+<g id="Group 18487">
+<g id="Group 18478">
+<path id="Rectangle 1000" d="M-311.5 -2C-311.5 -10.0081 -305.008 -16.5 -297 -16.5H62C70.0081 -16.5 76.5 -10.0081 76.5 -2V65.5H-311.5V-2Z" fill="white" stroke="#DDE2EE"/>
+<g id="Group 18476">
+<g id="atom/icon/profile" clip-path="url(#clip1)">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M7.99983 15.4665C12.0254 15.4665 15.2887 12.1633 15.2887 8.08872C15.2887 4.01408 12.0254 0.710938 7.99983 0.710938C3.97428 0.710938 0.710938 4.01408 0.710938 8.08872C0.710938 12.1633 3.97428 15.4665 7.99983 15.4665Z" stroke="#6F6F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Group_3">
+<path id="Vector_2" d="M7.99965 7.99931C9.42332 7.99931 10.5774 6.84519 10.5774 5.42153C10.5774 3.99786 9.42332 2.84375 7.99965 2.84375C6.57599 2.84375 5.42188 3.99786 5.42188 5.42153C5.42188 6.84519 6.57599 7.99931 7.99965 7.99931Z" stroke="#6F6F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M2.75391 13.2451C3.55391 11.1117 5.59835 9.51172 7.99835 9.51172C10.3984 9.51172 12.4428 11.1117 13.2428 13.2451" stroke="#6F6F8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="1440" height="900" fill="white" transform="translate(-1338 -324)"/>
+</clipPath>
+<clipPath id="clip1">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>
