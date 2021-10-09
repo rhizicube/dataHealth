@@ -8,38 +8,117 @@ declare var require: any;
   styleUrls: ['./connectors.component.css'],
 })
 export class ConnectorsComponent implements OnInit {
-  require : any; 
+  require: any;
   constructor() {}
-  
+
   // logo = require('src/assets/images/logo.svg').default;
-  logos = new URL('src/assets/images/logo.svg', import.meta.url)
+  logos = new URL('src/assets/images/logo.svg', import.meta.url);
   ngOnInit(): void {}
-  // source: { title: string; value: number; description: string }[] = [
-  //   { title: 'Appjs', value: 200, description: 'Available' },
-  //   { title: 'AWS', value: 2005, description: 'Available' },
-  //   { title: 'branch', value: 3000, description: 'Available' },
-  //   { title: 'Appjs', value: 200, description: 'Available' },
-  //   { title: 'AWS', value: 2005, description: 'Available' },
-  //   { title: 'branch', value: 3000, description: 'Available' },
-  //   { title: 'AWS', value: 2005, description: 'Available' },
-  //   { title: 'branch', value: 3000, description: 'Available' },
-    
-  // ];
-  source: { title: string; value: number; description: string, logo: string }[] = [
-    { title: 'Appsflyer', value: 200, description: 'Available', logo: '../../assets/images/logo.svg' },
-    { title: 'AWS', value: 2005, description: 'Available', logo: '../../assets/images/aws.svg' },
-    { title: 'branch', value: 3000, description: 'Available', logo: '../../assets/images/custom.svg' },
-    { title: 'Shoppify', value: 200, description: 'Available', logo: '../../assets/images/shopify.svg' },
-    { title: 'Custom', value: 2005, description: 'Available', logo: '../../assets/images/custom2.svg' },
-    { title: 'branch', value: 3000, description: 'Available', logo: '../../assets/images/custom.svg' },
+
+  codition: boolean = false;
+  source: {
+    title: string;
+    value: number;
+    description: string;
+    logo: string;
+  }[] = [
+    {
+      title: 'Appsflyer',
+      value: 200,
+      description: 'Available',
+      logo: '../../assets/images/logo.svg',
+    },
+    {
+      title: 'AWS',
+      value: 2005,
+      description: 'Available',
+      logo: '../../assets/images/aws.svg',
+    },
+    {
+      title: 'branch',
+      value: 3000,
+      description: 'Available',
+      logo: '../../assets/images/custom.svg',
+    },
+    {
+      title: 'Shoppify',
+      value: 200,
+      description: 'Available',
+      logo: '../../assets/images/shopify.svg',
+    },
+    {
+      title: 'Custom',
+      value: 2005,
+      description: 'Available',
+      logo: '../../assets/images/custom2.svg',
+    },
+    {
+      title: 'branch',
+      value: 3000,
+      description: 'Available',
+      logo: '../../assets/images/custom.svg',
+    },
+    {
+      title: 'Shoppify',
+      value: 200,
+      description: 'Available',
+      logo: '../../assets/images/shopify.svg',
+    },
+    {
+      title: 'Custom',
+      value: 2005,
+      description: 'Available',
+      logo: '../../assets/images/custom2.svg',
+    },
+    {
+      title: 'branch',
+      value: 3000,
+      description: 'Available',
+      logo: '../../assets/images/custom.svg',
+    },
   ];
 
-  destination: { title: string; value: number; description: string, logo: string }[] = [
-    { title: 'Appsflyer', value: 200, description: 'Available', logo: '../../assets/images/logo.svg' },
-    { title: 'AWS', value: 2005, description: 'Available', logo: '../../assets/images/aws.svg' },
-    { title: 'branch', value: 3000, description: 'Available', logo: '../../assets/images/custom.svg' },
-    { title: 'Shoppify', value: 200, description: 'Available', logo: '../../assets/images/shopify.svg' },
-    { title: 'Custom', value: 2005, description: 'Available', logo: '../../assets/images/custom2.svg' },
-    { title: 'branch', value: 3000, description: 'Available', logo: '../../assets/images/custom.svg' },
+  destination: {
+    title: string;
+    value: number;
+    description: string;
+    logo: string;
+  }[] = [
+    {
+      title: 'Appsflyer',
+      value: 200,
+      description: 'Available',
+      logo: '../../assets/images/logo.svg',
+    },
+    {
+      title: 'AWS',
+      value: 2005,
+      description: 'Available',
+      logo: '../../assets/images/aws.svg',
+    },
+    {
+      title: 'branch',
+      value: 3000,
+      description: 'Available',
+      logo: '../../assets/images/custom.svg',
+    },
+    {
+      title: 'Shoppify',
+      value: 200,
+      description: 'Available',
+      logo: '../../assets/images/shopify.svg',
+    },
+    {
+      title: 'Custom',
+      value: 2005,
+      description: 'Available',
+      logo: '../../assets/images/custom2.svg',
+    },
+    {
+      title: 'branch',
+      value: 3000,
+      description: 'Available',
+      logo: '../../assets/images/custom.svg',
+    },
   ];
 }
