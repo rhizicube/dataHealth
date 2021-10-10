@@ -1,9 +1,4 @@
-/* .card {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-} */
+
 
 .div1 {
   border-top: 1px solid black;
@@ -53,11 +48,11 @@
   border-left: 1px solid black;
 
   border-bottom: 1px solid black;
-  margin-top: -105px;
+  margin-top: -88px;
   margin-bottom: -100px;
   margin-right: -12px;
   width: 91px;
-  height: 45px;
+  height: 28px;
   border-bottom-left-radius: 30px;
 }
 .div6 {
@@ -68,7 +63,7 @@
   margin-bottom: -100px;
   margin-right: -12px;
   width: 91px;
-  height: 45px;
+  height: 28px;
 
   border-top-left-radius: 30px;
 }
@@ -125,11 +120,11 @@
 
   border-bottom: 1px solid black;
 
-  margin-top: -105px;
+  margin-top: -88px;
   margin-bottom: -100px;
   margin-left: -12px;
   width: 91px;
-  height: 45px;
+  height: 28px;
   border-bottom-right-radius: 30px;
 }
 .div12 {
@@ -140,7 +135,7 @@
   margin-bottom: -100px;
   margin-left: -12px;
   width: 91px;
-  height: 45px;
+  height: 28px;
 
   border-top-right-radius: 30px;
 }

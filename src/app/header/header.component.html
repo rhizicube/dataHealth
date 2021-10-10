@@ -1,76 +1,71 @@
 <!-- <div class="container-fluid"style = "width: 100% ; "> -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-light"  >
-    <div class="container-fluid" style = "width: 100%">
-    
-        <div class="navbar-header" >
-          <img src="https://aniportalimages.s3.amazonaws.com/media/details/unnamed_1_cHs1lps_UNVL2WK.jpg" 
-          style="height: 80px; width: 150px"/>
-            <!-- <a routerLink="/" class="navbar-brand" 
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <div class="container-fluid" style="width: 100%">
+    <div class="navbar-header">
+      <img
+        src="https://aniportalimages.s3.amazonaws.com/media/details/unnamed_1_cHs1lps_UNVL2WK.jpg"
+        style="height: 80px; width: 150px"
+      />
+      <!-- <a routerLink="/" class="navbar-brand" 
             style="color: black; font-size: large; font-weight: bold; font-style: italic;">netCore</a> -->
-        </div>
-        <div class="collapse navbar-collapse">
-            
-              
-              <div class="input-group" >
-                <!-- <div class="form-outline"  > -->
-                  <input type="search" class="form-control" style="border: 1px solid black ;" />
-                  
-                <!-- </div> -->
-                <button  class="btn btn-outline-secondary"  >
-                  <span class="material-icons" style="height: 20%;">
-                    search
-                    </span>
-                </button>
-              </div>
-                
-              <div ngbDropdown>
-                <button class="btn btn-secondary" id="gfg" 
-                        ngbDropdownToggle>side drop</button>
-                <div ngbDropdownMenu="gfg">
-                  <button ngbDropdownItem>detail1</button>
-                  <button ngbDropdownItem>detail1</button>
-                  <button ngbDropdownItem>detail1</button>
-                </div>
-              </div>
-            
-           
-            
-               
-            
-
-        </div>
-
-
     </div>
+    <div class="collapse navbar-collapse">
+      <div class="input-group">
+        <!-- <div class="form-outline"  > -->
+        <input
+          type="search"
+          class="form-control"
+          style="height : 30px;border: 1px solid black"
+        />
+
+        <!-- </div> -->
+        <button class="btn btn-outline-secondary" style="height: 30px;">
+          <span class="material-icons" style="height: 5%"> search </span>
+        </button>
+      </div>
+
+      <div ngbDropdown>
+        <!-- <button class="btn btn-secondary" id="gfg" ngbDropdownToggle>
+          side drop
+        </button> -->
+        <a  id="gfg" ngbDropdownToggle>Current User</a>
+        <div ngbDropdownMenu="gfg">
+          <button ngbDropdownItem>detail1</button>
+          <button ngbDropdownItem>detail1</button>
+          <button ngbDropdownItem>detail1</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
 
+<div
+  class="
+    side-navbar
+    active-nav
+    d-flex
+    justify-content-between
+    flex-wrap flex-column
+  "
+  id="sidebar"
+  style="height: 115%"
+>
+  <ul class="nav flex-column text-white w-100">
+    <a href="#" class="nav-link p text-white">Cutomers </a>
 
-<div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar" 
-style="height: 115%;">
+    <br />
+    <a href="#" class="nav-link h4 text-white">DashBoard </a>
+    <br />
+    <a href="#" class="nav-link p text-white">Data Health </a>
 
-    <ul class="nav flex-column text-white w-100">
-      
-     
-        
-      <a href="#" class="nav-link p text-white ">Cutomers
-      </a>
-     
-      <br>
-      <a href="#" class="nav-link h4 text-white ">DashBoard
-      </a>
-      <br>
-        <a href="#" class="nav-link p text-white ">Data Health
-        </a>
-      
-        <br>
-        
-        <a href="#" class="nav-link p text-white ">Business Insights
-        </a>
-        <br>
-      <!-- <li href="#" class="nav-link">
+    <br />
+
+    <a href="#" class="nav-link p text-white">Business Insights </a>
+    <br />
+    <!-- <li href="#" class="nav-link">
         <span class="mx-2">Contact</span>
       </li> -->
-    </ul>
-  </div>
+  </ul>
+</div>
 <!-- </div> -->
-  <!-- <router-outlet></router-outlet> -->
+<!-- <router-outlet></router-outlet> -->

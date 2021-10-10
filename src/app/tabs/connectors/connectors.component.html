@@ -1,25 +1,27 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-1"><h5>Source</h5></div>
+    <div class="col-1" style="margin-bottom:10px;"><h5>Source</h5></div>
     <div class="col-3">
       <button
         class="btn btn-primary"
         style="
+        width: 100px;
           height: 30px;
           margin-left: 70px;
           padding-bottom: 10px;
-          font-size: 10px;
+          font-size: 12px;
+          background-color: darkblue;
         "
       >
         Add Sources
       </button>
     </div>
     <div class="col-5"></div>
-    <div class="col-1" style="margin-left: -30px"><h5>Destination</h5></div>
+    <div class="col-1" style="margin-left: -30px; margin-bottom:10px;"><h5>Destination</h5></div>
     <div class="col-2">
       <button
         class="btn btn-primary"
-        style="height: 30px; margin-left: 70px; font-size: 10px; padding: 0"
+        style="width: 100px;height: 30px; margin-left: 70px; font-size: 12px; padding: 0;background-color: darkblue;"
       >
         Add Destination
       </button>
@@ -27,18 +29,21 @@
   </div>
   <div class="row" style="padding: 0">
     <div class="col-5">
-      <!-- <div class="card-deck card-deck-left mt-5"> -->
-
+      
+    <div *ngIf = "source.length > 0">
       <div *ngFor="let s of source; let i = index">
         <div class="col-12" style="float: left">
           <div class="col-8">
-            <div class="card">
-              <div class="card-body" style="height: 70px">
+            
+            <div  class="card">
+              
+              <div class="card-body" style="height: 65px;">
+                
                 <img
                   [src]="s.logo"
                   style="position: absolute; top: 5px; left: 5px"
                 />
-                <h6 style="font-size: medium; position: absolute; left: 50px">
+                <h6 style="font-size: medium; position: absolute; left: 50px;top:5px;">
                   {{ s.title }}
                 </h6>
                 <p
@@ -53,15 +58,19 @@
                 </p>
 
                 <p
-                  style="font-size: small; position: absolute; top: 0; right: 0"
+                  style="font-size: 12px; position: absolute; top: 0; right: 5px"
                 >
-                  {{ s.value }}
+                  {{ s.value }}K
                 </p>
+                <img
+                  [src]="s.userLogo"
+                  style="position: absolute; top: 2px; right: 30px"
+                />
               </div>
             </div>
           </div>
         </div>
-
+         <div *ngIf = "source.length > 3">
         <div class="div1" style="float: right" *ngIf="i < 2"></div>
         <div class="div2" style="float: right" *ngIf="i == 2"></div>
         <div class="div4" style="float: right" *ngIf="i == 3"></div>
@@ -74,34 +83,63 @@
         <div class="div5" style="float: right" *ngIf="i == 3"></div>
         <div class="div6" style="float: right" *ngIf="i == 3"></div>
       </div>
+      <div *ngIf = "source.length < 4">
+        <div class="div2" style="float: right" *ngIf="i == 0"></div>
+        <div class="div4" style="float: right" *ngIf="i == 1"></div>
+        <div class="div5" style="float: right" *ngIf="i == 1"></div>
+        <div class="div6" style="float: right" *ngIf="i == 1"></div>
+        
+        <div
+          class="div3"
+          style="float: right"
+          *ngIf="i !== source.length - 1 && i == 1"
+        ></div>
+      </div>
+      </div>
+    </div>
     </div>
 
-    <div class="col-2" style="display: flex; justify-content: center">
-      <div class="image" style="margin-top: 170px">
+    <div  class="col-2" >
+      <div *ngIf = "source.length >= 4" class="image" style="margin-top: 150px;display: flex; justify-content: center;">
         <img
           src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
           style="
             border-radius: 100px;
-            height: 100px;
-            width: 100px;
-            box-shadow: 0 0 6px 10px gray;
-            background-color: #e65525;
+            height: 120px;
+            width: 120px;
+            box-shadow: 0 0 5px 15px lightgrey;
+            
+          "
+        />
+      </div>
+      <div class="image" *ngIf = "source.length < 4" class="image" style="margin-top: 10px;display: flex; justify-content: center;">
+        <img
+          src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
+          style="
+            border-radius: 100px;
+            height: 120px;
+            width: 120px;
+            box-shadow: 0 0 5px 15px lightgrey;
+            
           "
         />
       </div>
     </div>
+        
+     
+    
 
     <div class="col-5" style="margin-right: 0px">
       <div *ngFor="let d of destination; let i = index">
         <div class="col-12" style="float: right">
           <div class="col-8" style="float: right">
             <div class="card">
-              <div class="card-body" style="height: 70px; width: 230px">
+              <div class="card-body" style="height: 65px; ">
                 <img
                   [src]="d.logo"
                   style="position: absolute; top: 5px; left: 5px"
                 />
-                <h6 style="font-size: medium; position: absolute; left: 50px">
+                <h6 style="font-size: medium; position: absolute; left: 50px; top:5px;">
                   {{ d.title }}
                 </h6>
                 <p
@@ -116,14 +154,19 @@
                 </p>
 
                 <p
-                  style="font-size: small; position: absolute; top: 0; right: 0"
+                  style="font-size: 12px; position: absolute; top: 0; right: 5px"
                 >
-                  {{ d.value }}
+                  {{ d.value }}K
                 </p>
+                <img
+                  [src]="d.userLogo"
+                  style="position: absolute; top: 2px; right: 30px"
+                />
               </div>
             </div>
           </div>
         </div>
+        <div *ngIf = " destination.length > 3">
         <div class="div7" style="float: left" *ngIf="i < 2"></div>
         <div class="div9" style="float: left" *ngIf="i == 2"></div>
         <div class="div10" style="float: left" *ngIf="i == 3"></div>
@@ -134,6 +177,19 @@
         ></div>
         <div class="div11" style="float: left" *ngIf="i == 3"></div>
         <div class="div12" style="float: left" *ngIf="i == 3"></div>
+      </div>
+        <div *ngIf = " destination.length < 4">
+          <div class="div9" style="float: left" *ngIf="i == 0"></div>
+          <div class="div10" style="float: left" *ngIf="i == 1"></div>
+          <div class="div11" style="float: left" *ngIf="i == 1"></div>
+          <div class="div12" style="float: left" *ngIf="i == 1"></div>
+          
+          <div
+            class="div8"
+            style="float: left"
+            *ngIf="i !== destination.length - 1 && i == 1"
+          ></div>
+        </div>
       </div>
     </div>
   </div>
