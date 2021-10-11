@@ -1,16 +1,19 @@
-<div class="div1" >
-    <app-header  ></app-header> </div>
-<div class = "container-fluid" style= "background-color: rgba(244, 248, 255, 1); height: 100%; width: 100%;
- ">
- 
- 
-<div class="row" style=" margin-left: 16%; ">
-    <h2 > {{ mainData.title}} </h2>
-    <p> {{mainData.description}} </p>
-    
-    <!-- <app-connectors></app-connectors> -->
-    <app-tabs></app-tabs>
+<div class="div1">
+  <app-header></app-header>
 </div>
+<div
+  class="container-fluid"
+  style="
+    padding: 0px;
+    background-color: rgba(244, 248, 255, 1);
+    height: 100%;
+    width: 100%;
+  "
+>
+  <div class="row" style="padding: 0px; margin-left: 265px; margin-right: 25px">
+    <h2>{{ mainData.title }}</h2>
+    <p>{{ mainData.description }}</p>
 
- 
- </div>
+    <app-tabs></app-tabs>
+  </div>
+</div>

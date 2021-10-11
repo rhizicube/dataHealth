@@ -1,18 +1,21 @@
 p{
-    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+   margin-top: 5px;
+   margin-bottom: 23px;
+    font-family: 'Nunito';
 font-style: normal;
-font-weight: 400;
+font-weight: 600;
 font-size: 15px;
 line-height: 22px;
 /* identical to box height */
-
+padding:0px;
 letter-spacing: 0.333333px;
 
 color: #6F6F8D;
 }
 h2{
-    margin-top: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif; 
-    
+    margin-top: 25px; 
+    margin-bottom: 0px; 
+    padding:0px;
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
