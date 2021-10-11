@@ -1,4 +1,4 @@
-.navbar.navbar-expand-lg.navbar-dark.bg-light{
+.navbar.navbar-expand-lg.navbar-dark.bg-white{
   
   height: 50px;
   
@@ -8,10 +8,27 @@
     
   box-shadow: 0 2px 5px grey;
 }
+h4{
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 1);
+}
+.nav-link {
+  font-size: 16px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 25px;
+}
 .mx-2{
   color: white;
 }
-a:hover {
+li:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   cursor:grabbing;
   background-color: lightblue !important;
 }
@@ -30,7 +47,7 @@ a:hover {
 }
 .form-control{
   
-  border-radius: 10px 10px;
+  border-radius: 3px 3px;
 }
 .side-navbar {
     width: 15%;
@@ -38,7 +55,8 @@ a:hover {
     flex: content;
     position: absolute;
     margin-left: -300px;
-    background-color: blue;
+    background-color: 
+    rgba(20, 63, 147, 1);
     transition: 0.5s;
   }
   
@@ -72,6 +90,12 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     /* text-align: center; */
+  }
+  li{
+    margin-left: 5px;
+  }
+  img{
+    margin-left: 5px;
   }
   @media screen and (max-width: 500px) {
     .navbar.navbar-expand-lg.navbar-dark.bg-light{
