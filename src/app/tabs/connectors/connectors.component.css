@@ -42,7 +42,7 @@
 }
 #userLogo {
   position: absolute;
-  top: 2px;
+  top: 5px;
   right: 30px;
 }
 h6 {
@@ -60,7 +60,7 @@ h6 {
 #value {
   font-size: 12px;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 5px;
 }
 #dLogo {
@@ -70,7 +70,7 @@ h6 {
 }
 #duserLogo {
   position: absolute;
-  top: 2px;
+  top: 5px;
   right: 30px;
 }
 #imgdown1 {
@@ -266,4 +266,47 @@ h6 {
   height: 28px;
 
   border-top-right-radius: 30px;
+}
+.div13 {
+  float: left;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-top-right-radius: 20px;
+  margin-top: -35px;
+
+  margin-left: 292px;
+  height: 30px;
+  width: 50px;
+}
+.div15 {
+  float: left;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom-left-radius: 30px;
+  margin-top: -5px;
+
+  margin-left: 341px;
+  height: 17px;
+  width: 50px;
+}
+.div14 {
+  float: left;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-top-left-radius: 20px;
+  margin-top: -35px;
+  margin-left: 50px;
+  height: 30px;
+  width: 50px;
+}
+.div16 {
+  float: left;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-right-radius: 30px;
+  margin-top: -5px;
+margin-left: 4px;
+ 
+  height: 17px;
+  width: 47px;
 }

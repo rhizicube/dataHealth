@@ -14,7 +14,7 @@
   </div>
   <div class="row">
     <div class="col-5">
-      <div *ngIf="source.length >= 2">
+      <div>
         <div *ngFor="let s of source; let i = index">
           <div class="col-12">
             <div class="col-8">
@@ -34,6 +34,12 @@
               </div>
             </div>
           </div>
+          <div *ngIf = "source.length == 1">
+            <div class="div13"></div>
+              <div class="div15"></div>
+
+            
+          </div>
           <div *ngIf="source.length > 3 && destination.length > 3">
             <div class="div1" *ngIf="i < 2"></div>
             <div class="div2" *ngIf="i == 2"></div>
@@ -44,7 +50,7 @@
             <div class="div6" *ngIf="i == 3"></div>
           </div>
 
-          <div *ngIf="source.length < 4">
+          <div *ngIf="source.length < 4 && source.length > 1">
             <div class="div2" *ngIf="i == 0"></div>
             <div class="div4" *ngIf="i == 1"></div>
             <div class="div5" *ngIf="i == 1"></div>
@@ -111,7 +117,7 @@
     </div>
 
     <div class="col-5">
-      <div *ngIf="destination.length >= 2">
+      <div >
         <div *ngFor="let d of destination; let i = index">
           <div class="col-12">
             <div class="col-8">
@@ -131,6 +137,10 @@
               </div>
             </div>
           </div>
+          <div *ngIf = "destination.length == 1">
+            <div class="div14"></div>
+            <div class="div16"></div>
+            </div>
           <div *ngIf="destination.length > 3 && source.length > 3">
             <div class="div7" *ngIf="i < 2"></div>
             <div class="div9" *ngIf="i == 2"></div>
@@ -142,7 +152,7 @@
             <div class="div11" *ngIf="i == 3"></div>
             <div class="div12" *ngIf="i == 3"></div>
           </div>
-          <div *ngIf="destination.length < 4">
+          <div *ngIf="destination.length < 4 && destination.length > 1 ">
             <div class="div9" *ngIf="i == 0"></div>
             <div class="div10" *ngIf="i == 1"></div>
             <div class="div11" *ngIf="i == 1"></div>
@@ -164,8 +174,10 @@
               *ngIf="i !== destination.length - 1 && i > 0"
             ></div>
           </div>
-        </div>
+        
       </div>
     </div>
   </div>
+
+ 
 </div>
