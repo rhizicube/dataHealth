@@ -42,27 +42,27 @@ export class ConnectorsComponent implements OnInit {
       userLogo: '../../assets/images/icon.svg',
       logo: '../../assets/images/custom.svg',
     },
-    // {
-    //   title: 'Shoppify',
-    //   value: 20,
-    //   description: 'Available',
-    //   userLogo: '../../assets/images/icon.svg',
-    //   logo: '../../assets/images/shopify.svg',
-    // },
-    // {
-    //   title: 'Custom',
-    //   value: 21,
-    //   description: 'Available',
-    //   userLogo: '../../assets/images/icon.svg',
-    //   logo: '../../assets/images/custom2.svg',
-    // },
-    // {
-    //   title: 'Appsflyer',
-    //   value: 3.2,
-    //   description: 'Available',
-    //   userLogo: '../../assets/images/icon.svg',
-    //   logo: '../../assets/images/flyer.svg',
-    // },
+    {
+      title: 'Shoppify',
+      value: 20,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/shopify.svg',
+    },
+    {
+      title: 'Custom',
+      value: 21,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/custom2.svg',
+    },
+    {
+      title: 'Appsflyer',
+      value: 3.2,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/flyer.svg',
+    },
   ];
 
   destination: {

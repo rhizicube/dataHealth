@@ -34,7 +34,7 @@
               </div>
             </div>
           </div>
-          <div *ngIf="source.length > 3">
+          <div *ngIf="source.length > 3 && destination.length > 3">
             <div class="div1" *ngIf="i < 2"></div>
             <div class="div2" *ngIf="i == 2"></div>
             <div class="div4" *ngIf="i == 3"></div>
@@ -43,6 +43,7 @@
             <div class="div5" *ngIf="i == 3"></div>
             <div class="div6" *ngIf="i == 3"></div>
           </div>
+
           <div *ngIf="source.length < 4">
             <div class="div2" *ngIf="i == 0"></div>
             <div class="div4" *ngIf="i == 1"></div>
@@ -51,18 +52,57 @@
 
             <div class="div3" *ngIf="i !== source.length - 1 && i == 1"></div>
           </div>
+          <div *ngIf="source.length >= 4 && destination.length < 4">
+            <div class="div2" *ngIf="i == 0"></div>
+            <div class="div4" *ngIf="i == 1"></div>
+            <div class="div5" *ngIf="i == 1"></div>
+            <div class="div6" *ngIf="i == 1"></div>
+
+            <div class="div3" *ngIf="i !== source.length - 1 && i > 0"></div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="col-2">
-      <div *ngIf="source.length >= 4" class="image" id="imgdown1">
+      <div
+        *ngIf="source.length >= 4 && destination.length >= 4"
+        class="image"
+        id="imgdown1"
+      >
         <img
           id="imgdown2"
           src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
         />
       </div>
-      <div class="image" id="imgup1" *ngIf="source.length < 4" class="image">
+      <div
+        class="image"
+        id="imgup1"
+        *ngIf="source.length < 4 && destination.length < 4"
+        class="image"
+      >
+        <img
+          id="imgup2"
+          src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
+        />
+      </div>
+      <div
+        class="image"
+        id="imgup1"
+        *ngIf="source.length >= 4 && destination.length < 4"
+        class="image"
+      >
+        <img
+          id="imgup2"
+          src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
+        />
+      </div>
+      <div
+        class="image"
+        id="imgup1"
+        *ngIf="source.length < 4 && destination.length >= 4"
+        class="image"
+      >
         <img
           id="imgup2"
           src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
@@ -91,7 +131,7 @@
               </div>
             </div>
           </div>
-          <div *ngIf="destination.length > 3">
+          <div *ngIf="destination.length > 3 && source.length > 3">
             <div class="div7" *ngIf="i < 2"></div>
             <div class="div9" *ngIf="i == 2"></div>
             <div class="div10" *ngIf="i == 3"></div>
@@ -111,6 +151,17 @@
             <div
               class="div8"
               *ngIf="i !== destination.length - 1 && i == 1"
+            ></div>
+          </div>
+          <div *ngIf="destination.length >= 4 && source.length < 4">
+            <div class="div9" *ngIf="i == 0"></div>
+            <div class="div10" *ngIf="i == 1"></div>
+            <div class="div11" *ngIf="i == 1"></div>
+            <div class="div12" *ngIf="i == 1"></div>
+
+            <div
+              class="div8"
+              *ngIf="i !== destination.length - 1 && i > 0"
             ></div>
           </div>
         </div>
