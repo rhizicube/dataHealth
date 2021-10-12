@@ -1,14 +1,14 @@
-<div class = "container-fluid" style= "background-color: lightblue; height: 100%; width: 100%;
- ">
- <div class="div1" style="margin-left: -25px; margin-right: -25px">
- <app-header  ></app-header> </div>
- 
-<div class="row" style="margin-top: 20px; margin-left: 16%">
-    <h2> {{ mainData.title}} </h2>
-    <hr>
-    <!-- <app-connectors></app-connectors> -->
-    <app-tabs></app-tabs>
+<div class="div1">
+  <app-header></app-header>
 </div>
-
+<div
+  class="container-fluid"
  
- </div>
+>
+  <div class="row">
+    <h2>{{ mainData.title }}</h2>
+    <p>{{ mainData.description }}</p>
+
+    <app-tabs></app-tabs>
+  </div>
+</div>

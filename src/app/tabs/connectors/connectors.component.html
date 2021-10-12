@@ -1,81 +1,171 @@
-<div class="container" style="width: 100%;" >
-    <div class="row"style="padding: 0;">
-        <div class="col-lg-4" >
-            <h5>Source</h5>
-            <!-- <div class="card-deck card-deck-left mt-5"> -->
-                
-        <ng-container *ngFor = "let s of source" style="position: absolute;
-        left: 150px;">
-            <div class="col-10"> 
-                
-                <div class="card" id="div1" > 
-                    
-                    <div class="card-body" style="height: 70px;">
-                        <h6>{{s.title}} </h6>
-                        <p>{{s.description}} </p>
-                        <p style="font-size: small; position:absolute; top:0; right:0">{{s.value }} </p>
-                        
-                        
-                    </div>
-                </div>
-                
-                
-            </div>
-            
-        </ng-container>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-1"><h5>Source</h5></div>
+    <div class="col-3">
+      <button class="btn btn-primary">Add Sources</button>
     </div>
-   
-    
-    <div  class="col-lg-4" id="div2" style="display: flex;
-    justify-content: center;align-items: center;" >
-        <div class="image" style="position: absolute; ">
-            
-        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
-        style="border-radius: 100px; height: 100px; width : 100px; " />
-        
+    <div class="col-5"></div>
+    <div class="col-1" id="right">
+      <h5>Destination</h5>
     </div>
-</div>
+    <div class="col-2">
+      <button class="btn btn-primary" id="rightbutton">Add Destination</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5">
+      <div *ngIf="source.length >= 2">
+        <div *ngFor="let s of source; let i = index">
+          <div class="col-12">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body">
+                  <img [src]="s.logo" id="logo" />
+                  <h6>
+                    {{ s.title }}
+                  </h6>
+                  <p id="desc">
+                    {{ s.description }}
+                  </p>
 
-    <div class="col-lg-4" style="margin-right: 0px;">
-        <h5>Destination</h5>
-        <ng-container *ngFor = "let d of destination"  style="position: absolute;
-        right: 150px;">
-            <div class="col-10"> 
-                <div class="card" > 
-                    <div class="card-body" style="height: 70px;">
-                        <h6>{{d.title}} </h6>
-                        <p>{{d.description}} </p>
-                        <img src="../../../assets/images/logo.svg">
-                        <p style="font-size: small; position:absolute; top:0; right:0">{{d.value }} </p>
-                    </div>
+                  <p id="value">{{ s.value }}K</p>
+                  <img [src]="s.userLogo" id="userLogo" />
                 </div>
+              </div>
             </div>
-        </ng-container>
+          </div>
+          <div *ngIf="source.length > 3 && destination.length > 3">
+            <div class="div1" *ngIf="i < 2"></div>
+            <div class="div2" *ngIf="i == 2"></div>
+            <div class="div4" *ngIf="i == 3"></div>
+
+            <div class="div3" *ngIf="i !== source.length - 1 && i > 2"></div>
+            <div class="div5" *ngIf="i == 3"></div>
+            <div class="div6" *ngIf="i == 3"></div>
+          </div>
+
+          <div *ngIf="source.length < 4">
+            <div class="div2" *ngIf="i == 0"></div>
+            <div class="div4" *ngIf="i == 1"></div>
+            <div class="div5" *ngIf="i == 1"></div>
+            <div class="div6" *ngIf="i == 1"></div>
+
+            <div class="div3" *ngIf="i !== source.length - 1 && i == 1"></div>
+          </div>
+          <div *ngIf="source.length >= 4 && destination.length < 4">
+            <div class="div2" *ngIf="i == 0"></div>
+            <div class="div4" *ngIf="i == 1"></div>
+            <div class="div5" *ngIf="i == 1"></div>
+            <div class="div6" *ngIf="i == 1"></div>
+
+            <div class="div3" *ngIf="i !== source.length - 1 && i > 0"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- <div class="div1">
-        
+
+    <div class="col-2">
+      <div
+        *ngIf="source.length >= 4 && destination.length >= 4"
+        class="image"
+        id="imgdown1"
+      >
+        <img
+          id="imgdown2"
+          src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
+        />
+      </div>
+      <div
+        class="image"
+        id="imgup1"
+        *ngIf="source.length < 4 && destination.length < 4"
+        class="image"
+      >
+        <img
+          id="imgup2"
+          src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
+        />
+      </div>
+      <div
+        class="image"
+        id="imgup1"
+        *ngIf="source.length >= 4 && destination.length < 4"
+        class="image"
+      >
+        <img
+          id="imgup2"
+          src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
+        />
+      </div>
+      <div
+        class="image"
+        id="imgup1"
+        *ngIf="source.length < 4 && destination.length >= 4"
+        class="image"
+      >
+        <img
+          id="imgup2"
+          src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
+        />
+      </div>
     </div>
-    <div class="div2">
-        
+
+    <div class="col-5">
+      <div *ngIf="destination.length >= 2">
+        <div *ngFor="let d of destination; let i = index">
+          <div class="col-12">
+            <div class="col-8">
+              <div class="card" id="destCard">
+                <div class="card-body">
+                  <img id="dLogo" [src]="d.logo" />
+                  <h6>
+                    {{ d.title }}
+                  </h6>
+                  <p id="desc">
+                    {{ d.description }}
+                  </p>
+
+                  <p id="value">{{ d.value }}K</p>
+                  <img id="duserLogo" [src]="d.userLogo" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="destination.length > 3 && source.length > 3">
+            <div class="div7" *ngIf="i < 2"></div>
+            <div class="div9" *ngIf="i == 2"></div>
+            <div class="div10" *ngIf="i == 3"></div>
+            <div
+              class="div8"
+              *ngIf="i !== destination.length - 1 && i > 2"
+            ></div>
+            <div class="div11" *ngIf="i == 3"></div>
+            <div class="div12" *ngIf="i == 3"></div>
+          </div>
+          <div *ngIf="destination.length < 4">
+            <div class="div9" *ngIf="i == 0"></div>
+            <div class="div10" *ngIf="i == 1"></div>
+            <div class="div11" *ngIf="i == 1"></div>
+            <div class="div12" *ngIf="i == 1"></div>
+
+            <div
+              class="div8"
+              *ngIf="i !== destination.length - 1 && i == 1"
+            ></div>
+          </div>
+          <div *ngIf="destination.length >= 4 && source.length < 4">
+            <div class="div9" *ngIf="i == 0"></div>
+            <div class="div10" *ngIf="i == 1"></div>
+            <div class="div11" *ngIf="i == 1"></div>
+            <div class="div12" *ngIf="i == 1"></div>
+
+            <div
+              class="div8"
+              *ngIf="i !== destination.length - 1 && i > 0"
+            ></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="div3">
-        
-    </div>
-    <div class="div4">
-        
-    </div>
-    <div class="div5">
-        
-    </div>
-    <div class="div6">
-        
-    </div>
-    <div class="div7">
-        
-    </div>
-    <div class="div8">
-        
-    </div>
-     -->
-    </div>
+  </div>
 </div>

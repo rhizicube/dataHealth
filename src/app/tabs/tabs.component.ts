@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabs.component.css']
 })
 export class TabsComponent implements OnInit {
-
+ line:boolean = true;
   constructor() { }
 
   ngOnInit(): void {

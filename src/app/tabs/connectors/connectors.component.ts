@@ -1,30 +1,118 @@
 import { Component, OnInit } from '@angular/core';
-// import { Tab } from '../tab.model';
+
+declare var require: any;
+
 @Component({
   selector: 'app-connectors',
   templateUrl: './connectors.component.html',
   styleUrls: ['./connectors.component.css'],
 })
 export class ConnectorsComponent implements OnInit {
+  require: any;
   constructor() {}
-  
-  // logo = require('src/assets/images/logo.svg').default;
+
+  logos = new URL('src/assets/images/logo.svg', import.meta.url);
   ngOnInit(): void {}
-  source: { title: string; value: number; description: string }[] = [
-    { title: 'Appjs', value: 200, description: 'Available' },
-    { title: 'AWS', value: 2005, description: 'Available' },
-    { title: 'branch', value: 3000, description: 'Available' },
-    { title: 'Appjs', value: 200, description: 'Available' },
-    { title: 'AWS', value: 2005, description: 'Available' },
-    { title: 'branch', value: 3000, description: 'Available' },
+
+  source: {
+    title: string;
+    value: number;
+    description: string;
+    userLogo: string;
+    logo: string;
+  }[] = [
+    {
+      title: 'Appsflyer',
+      value: 20,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/logo.svg',
+    },
+    {
+      title: 'AWS',
+      value: 2.5,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/aws.svg',
+    },
+    {
+      title: 'branch',
+      value: 30,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/custom.svg',
+    },
+    {
+      title: 'Shoppify',
+      value: 20,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/shopify.svg',
+    },
+    {
+      title: 'Custom',
+      value: 21,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/custom2.svg',
+    },
+    {
+      title: 'Appsflyer',
+      value: 3.2,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/flyer.svg',
+    },
   ];
 
-  destination: { title: string; value: number; description: string }[] = [
-    { title: 'Appjs', value: 200, description: 'Available' },
-    { title: 'AWS', value: 2005, description: 'Available' },
-    { title: 'branch', value: 3000, description: 'Available' },
-    { title: 'Appjs', value: 200, description: 'Available' },
-    { title: 'AWS', value: 2005, description: 'Available' },
-    { title: 'branch', value: 3000, description: 'Available' },
+  destination: {
+    title: string;
+    value: number;
+    description: string;
+    userLogo: string;
+    logo: string;
+  }[] = [
+    {
+      title: 'Appsflyer',
+      value: 20,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/logo.svg',
+    },
+    {
+      title: 'AWS',
+      value: 2.5,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/aws.svg',
+    },
+    {
+      title: 'Appsflyer',
+      value: 30,
+      description: 'Available',
+      userLogo: '../../assets/images/icon.svg',
+      logo: '../../assets/images/flyer.svg',
+    },
+    // {
+    //   title: 'Shoppify',
+    //   value: 20,
+    //   description: 'Available',
+    //   userLogo: '../../assets/images/icon.svg',
+    //   logo: '../../assets/images/shopify.svg',
+    // },
+    // {
+    //   title: 'Custom',
+    //   value: 2.5,
+    //   description: 'Available',
+    //   userLogo: '../../assets/images/icon.svg',
+    //   logo: '../../assets/images/custom2.svg',
+    // },
+    // {
+    //   title: 'branch',
+    //   value: 30,
+    //   description: 'Available',
+    //   userLogo: '../../assets/images/icon.svg',
+    //   logo: '../../assets/images/custom.svg',
+    // },
   ];
 }
