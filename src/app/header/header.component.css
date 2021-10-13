@@ -36,12 +36,16 @@ h4 {
 .mx-2 {
   color: white;
 }
-li:hover {
+/* li:hover {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   cursor: grabbing;
-  background-color: lightblue !important;
-}
+  
+  background: #F4F8FF;
+  border-radius: 10px 0px 0px 10px;
+  color: #143F93 !important;
+  
+} */
 .collapse.navbar-collapse {
   display: block;
   margin-left: auto;
@@ -112,10 +116,15 @@ h4 {
   transition: 0.5s;
 }
 
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
-  background-color: #ffffff26;
+
+/* li:focus {
+  background: #F4F8FF;
+border-radius: 10px 0px 0px 10px;
+color: #143F93 !important;
+
+} */
+li:focus {
+  outline:solid 1px black;
 }
 
 .active-nav {

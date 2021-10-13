@@ -11,6 +11,7 @@ import { DataComponent } from './data/data.component';
 
 
 const routes: Routes = [
+  {path: '', component: ConnectorsComponent},
   {path: 'Data', component: DataComponent},
   {path:'Connectors' , component: ConnectorsComponent}
 ];

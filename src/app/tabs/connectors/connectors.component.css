@@ -51,40 +51,58 @@ h5 {
 }
 #logo {
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 5px;
 }
 #userLogo {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 30px;
 }
 h6 {
-  font-size: medium;
+  font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 20px;
+  
   position: absolute;
   left: 50px;
-  top: 5px;
+  top: 10px;
 }
 #desc {
-  font-size: smaller;
+  font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+letter-spacing: 0.5px;
+
+/* Font/Font-1 */
+
+color: #6F6F8D;
+
+opacity: 0.9;
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 50px;
 }
 #value {
   font-size: 12px;
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 5px;
 }
 #dLogo {
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 5px;
 }
 #duserLogo {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 30px;
 }
 #imgdown1 {
@@ -327,4 +345,10 @@ h6 {
 
   height: 24px;
   width: 14%;
+}
+.card:first-child {
+ 
+  border: 1px solid lightGray;
+  box-sizing: border-box;
+  border-radius: 15px 15px 0px 0px;
 }

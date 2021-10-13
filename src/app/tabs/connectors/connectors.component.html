@@ -15,10 +15,10 @@
   <div class="row">
     <div class="col-4">
       <div>
-        <div *ngFor="let s of source; let i = index">
+        <div class="card" *ngFor="let s of source; let i = index">
           <div class="col-12">
-            <div class="card">
-              <div class="card-body">
+            <div >
+              <div class="card-body" >
                 <img [src]="s.logo" id="logo" />
                 <h6>
                   {{ s.title }}
