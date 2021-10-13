@@ -114,9 +114,9 @@
 
     <div class="col-4">
       <div>
-        <div *ngFor="let d of destination; let i = index">
+        <div class="card" id="destCard" *ngFor="let d of destination; let i = index">
           <div class="col-12">
-            <div class="card" id="destCard">
+            <div >
               <div class="card-body">
                 <img id="dLogo" [src]="d.logo" />
                 <h6>

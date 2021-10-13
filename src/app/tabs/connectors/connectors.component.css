@@ -1,5 +1,7 @@
 .container-fluid {
   padding: 0px;
+  background-color: rgba(244, 248, 255, 1);
+  
 }
 #source {
   padding: 0px;
@@ -351,4 +353,9 @@ opacity: 0.9;
   border: 1px solid lightGray;
   box-sizing: border-box;
   border-radius: 15px 15px 0px 0px;
+}
+.card:last-child{
+  border: 1px solid lightGray;
+  box-sizing: border-box;
+  border-radius:  0px 0px 15px 15px;
 }

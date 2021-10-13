@@ -115,14 +115,17 @@ h4 {
   background-color: rgba(20, 63, 147, 1);
   transition: 0.5s;
 }
+li:active {
+  background-color: iceBlue;
+  color: primaryColor;
+}
 
-
-/* li:focus {
+a:focus {
   background: #F4F8FF;
 border-radius: 10px 0px 0px 10px;
 color: #143F93 !important;
 
-} */
+}
 li:focus {
   outline:solid 1px black;
 }
