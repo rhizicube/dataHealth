@@ -1,44 +1,40 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-1"><h5>Source</h5></div>
-    <div class="col-3">
+    <div class="col-4" id="source">
+      <h5>Source</h5>
+
       <button class="btn btn-primary">Add Sources</button>
     </div>
-    <div class="col-5"></div>
-    <div class="col-1" id="right">
+
+    <div class="col-4"></div>
+    <div class="col-4" id="dest">
       <h5>Destination</h5>
-    </div>
-    <div class="col-2">
       <button class="btn btn-primary" id="rightbutton">Add Destination</button>
     </div>
   </div>
   <div class="row">
-    <div class="col-5">
+    <div class="col-4">
       <div>
         <div *ngFor="let s of source; let i = index">
           <div class="col-12">
-            <div class="col-8">
-              <div class="card">
-                <div class="card-body">
-                  <img [src]="s.logo" id="logo" />
-                  <h6>
-                    {{ s.title }}
-                  </h6>
-                  <p id="desc">
-                    {{ s.description }}
-                  </p>
+            <div class="card">
+              <div class="card-body">
+                <img [src]="s.logo" id="logo" />
+                <h6>
+                  {{ s.title }}
+                </h6>
+                <p id="desc">
+                  {{ s.description }}
+                </p>
 
-                  <p id="value">{{ s.value }}K</p>
-                  <img [src]="s.userLogo" id="userLogo" />
-                </div>
+                <p id="value">{{ s.value }}K</p>
+                <img [src]="s.userLogo" id="userLogo" />
               </div>
             </div>
           </div>
-          <div *ngIf = "source.length == 1">
+          <div *ngIf="source.length == 1">
             <div class="div13"></div>
-              <div class="div15"></div>
-
-            
+            <div class="div15"></div>
           </div>
           <div *ngIf="source.length > 3 && destination.length > 3">
             <div class="div1" *ngIf="i < 2"></div>
@@ -70,7 +66,7 @@
       </div>
     </div>
 
-    <div class="col-2">
+    <div class="col-4">
       <div
         *ngIf="source.length >= 4 && destination.length >= 4"
         class="image"
@@ -116,31 +112,29 @@
       </div>
     </div>
 
-    <div class="col-5">
-      <div >
+    <div class="col-4">
+      <div>
         <div *ngFor="let d of destination; let i = index">
           <div class="col-12">
-            <div class="col-8">
-              <div class="card" id="destCard">
-                <div class="card-body">
-                  <img id="dLogo" [src]="d.logo" />
-                  <h6>
-                    {{ d.title }}
-                  </h6>
-                  <p id="desc">
-                    {{ d.description }}
-                  </p>
+            <div class="card" id="destCard">
+              <div class="card-body">
+                <img id="dLogo" [src]="d.logo" />
+                <h6>
+                  {{ d.title }}
+                </h6>
+                <p id="desc">
+                  {{ d.description }}
+                </p>
 
-                  <p id="value">{{ d.value }}K</p>
-                  <img id="duserLogo" [src]="d.userLogo" />
-                </div>
+                <p id="value">{{ d.value }}K</p>
+                <img id="duserLogo" [src]="d.userLogo" />
               </div>
             </div>
           </div>
-          <div *ngIf = "destination.length == 1">
+          <div *ngIf="destination.length == 1">
             <div class="div14"></div>
             <div class="div16"></div>
-            </div>
+          </div>
           <div *ngIf="destination.length > 3 && source.length > 3">
             <div class="div7" *ngIf="i < 2"></div>
             <div class="div9" *ngIf="i == 2"></div>
@@ -152,7 +146,7 @@
             <div class="div11" *ngIf="i == 3"></div>
             <div class="div12" *ngIf="i == 3"></div>
           </div>
-          <div *ngIf="destination.length < 4 && destination.length > 1 ">
+          <div *ngIf="destination.length < 4 && destination.length > 1">
             <div class="div9" *ngIf="i == 0"></div>
             <div class="div10" *ngIf="i == 1"></div>
             <div class="div11" *ngIf="i == 1"></div>
@@ -174,10 +168,8 @@
               *ngIf="i !== destination.length - 1 && i > 0"
             ></div>
           </div>
-        
+        </div>
       </div>
     </div>
   </div>
-
- 
 </div>

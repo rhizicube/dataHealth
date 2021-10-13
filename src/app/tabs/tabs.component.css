@@ -2,12 +2,15 @@
   width: 100%;
   padding: 0px;
 }
-.navbar-nav {
+/* .row{
+  padding: 0px;
+} */
+/* .navbar-nav {
   overflow: hidden;
 }
 .nav-item {
   display: inline;
-}
+} */
 #id2 {
   font-family: Nunito;
   font-style: normal;
@@ -16,12 +19,19 @@
   line-height: 22px;
   color: #143f93;
   margin-left: 40px;
+  margin-bottom: -10px;
 }
 #id3 {
-  width: 150px;
+  width: 17%;
   height: 3px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: -2%;
+
+  padding: 0%;
+}
+img {
+  padding: 0px;
+
+  margin-left: 25px;
 }
 .avtive {
   background: blue;

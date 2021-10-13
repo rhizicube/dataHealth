@@ -1,17 +1,21 @@
 .container-fluid{
-  padding: 0px;
+  padding: 0px 0px;
   background-color: rgba(244, 248, 255, 1);
   height: 120vh;
   width: 100%;
 }
-.row{
+.tab{
+  margin-top: -10px;
   padding: 0px;
+}
+.row{
+  padding: 0px 0px;
    margin-left: 265px; 
    margin-right: 25px;
 }
 p {
   margin-top: 5px;
-  margin-bottom: 23px;
+  margin-bottom: 2%;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
