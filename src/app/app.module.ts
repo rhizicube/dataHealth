@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HighchartsChartModule } from 'highcharts-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +10,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TabsComponent } from './tabs/tabs.component';
 import { ConnectorsComponent } from './tabs/connectors/connectors.component';
 import { DataComponent } from './data/data.component';
+import { DatametrixComponent } from './tabs/datametrix/datametrix.component';
+import { LinegraphComponent } from './tabs/datametrix/linegraph/linegraph.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,15 @@ import { DataComponent } from './data/data.component';
     MainpageComponent,
     TabsComponent,
     ConnectorsComponent,
-    DataComponent
+    DataComponent,
+    DatametrixComponent,
+    LinegraphComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-     NgbModule
+     NgbModule,
+     HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

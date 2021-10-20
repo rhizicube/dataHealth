@@ -36,16 +36,15 @@ h4 {
 .mx-2 {
   color: white;
 }
-/* li:hover {
+li:hover {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   cursor: grabbing;
-  
-  background: #F4F8FF;
+
+  background: #f4f8ff;
   border-radius: 10px 0px 0px 10px;
-  color: #143F93 !important;
-  
-} */
+  color: #143f93 !important;
+}
 .collapse.navbar-collapse {
   display: block;
   margin-left: auto;
@@ -81,6 +80,7 @@ h4 {
 }
 #datahealthtxt {
   margin-top: 5px;
+  margin-left: 25px;
 }
 #datahealth {
   position: absolute;
@@ -108,35 +108,28 @@ h4 {
 }
 .side-navbar {
   width: 240px;
-  height: 120%;
+ min-height: 126.5vh;
+ max-height: 100%;
   flex: content;
   position: absolute;
   margin-left: -300px;
   background-color: rgba(20, 63, 147, 1);
   transition: 0.5s;
 }
-li:active {
-  background-color: iceBlue;
-  color: primaryColor;
-}
 
-a:focus {
-  background: #F4F8FF;
-border-radius: 10px 0px 0px 10px;
-color: #143F93 !important;
-
+li:focus-within {
+  background: #f4f8ff;
+  border-radius: 10px 0px 0px 10px;
+  color: #143f93 !important;
 }
-li:focus {
-  outline:solid 1px black;
+a:focus-within {
+  background: #f4f8ff;
+  border-radius: 10px 0px 0px 10px;
+  color: #143f93 !important;
 }
 
 .active-nav {
   margin-left: 0;
-}
-
-/* for main section */
-.active-cont {
-  margin-left: 180px;
 }
 
 .input-group {
@@ -147,9 +140,7 @@ li:focus {
 li {
   margin-left: 25px;
 }
-/* img {
-  margin-left: 5px;
-} */
+
 @media screen and (max-width: 500px) {
   .navbar.navbar-expand-lg.navbar-dark.bg-light {
     float: none;

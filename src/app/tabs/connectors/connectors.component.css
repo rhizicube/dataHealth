@@ -1,6 +1,6 @@
 .container-fluid {
   padding: 0px;
-  background-color: rgba(244, 248, 255, 1);
+  
   
 }
 #source {
@@ -114,10 +114,11 @@ opacity: 0.9;
   justify-content: center;
 }
 #imgdown2 {
+  
   border-radius: 100px;
-  height: 123px;
-  width: 123px;
-  box-shadow: 0 0 10px 24px lightgrey;
+  height: 35%;
+  width: 35%;
+  box-shadow: 0 0 10px 20px lightgrey;
 }
 #imgup1 {
   position: relative;
@@ -233,7 +234,7 @@ opacity: 0.9;
   border-top: 1px solid black;
   border-left: 1px solid black;
   margin-bottom: -85px;
-  margin-left: -13%;
+  margin-left: -14%;
   margin-top: -35px;
   width: 14%;
   height: 85px;
@@ -246,7 +247,7 @@ opacity: 0.9;
   border-left: 1px solid black;
   margin-top: -35px;
   margin-bottom: -85px;
-  margin-left: -13%;
+  margin-left: -14%;
   width: 14%;
 
   height: 85px;
@@ -260,7 +261,7 @@ opacity: 0.9;
   border-left: 1px solid black;
   margin-top: -35px;
   margin-bottom: -85px;
-  margin-left: -13%;
+  margin-left: -14%;
   width: 14%;
 
   height: 20px;
@@ -273,7 +274,7 @@ opacity: 0.9;
   border-left: 1px solid black;
   margin-top: -40px;
   margin-bottom: -85px;
-  margin-left: -13%;
+  margin-left: -14%;
   width: 14%;
 
   height: 20px;
@@ -288,7 +289,7 @@ opacity: 0.9;
   margin-top: -88px;
   margin-bottom: -100px;
   margin-left: -26.5%;
-  width: 14%;
+  width: 13%;
   height: 29px;
   border-bottom-right-radius: 30px;
 }
@@ -300,7 +301,7 @@ opacity: 0.9;
   margin-top: -60px;
   margin-bottom: -100px;
   margin-left: -26.5%;
-  width: 14%;
+  width: 13%;
   height: 26px;
 
   border-top-right-radius: 30px;

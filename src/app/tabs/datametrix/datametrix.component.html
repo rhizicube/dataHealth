@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <button type="button" class="btn btn-outline-primary">Keep me notified</button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id = "row2">
+            <div class="col-3" *ngFor = "let card of dataCard">
+                <div class="card" id = "card2">
+                    <div class="card-body" >
+                        <p>{{card.title}} </p>
+                        <p style="display: inline; font-size:12px">{{card.subTitle1}} </p>
+                        <p style="display: inline;font-size:12px">{{card.subTitle2}} </p>
+                        <img [src] = "card.icon" alt="icon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 0px;">
+            <div class="row" id = "row3">
+                <div class="col-6">
+                    <app-linegraph></app-linegraph>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+</div>
