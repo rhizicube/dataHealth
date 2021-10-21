@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
-import { FormBuilder } from "@angular/forms";
 // import * as Highcharts from 'highcharts';
 import * as Highcharts from 'highcharts/highstock';
 import * as HighchartsMore from 'highcharts/highcharts-more';
@@ -21,26 +20,25 @@ More(Highcharts);
 // const Accessibility = require('highcharts/modules/accessibility');
 // Accessibility(Highcharts);
 
+
 @Component({
-  selector: 'app-linegraph',
-  templateUrl: './linegraph.component.html',
-  styleUrls: ['./linegraph.component.css'],
+  selector: 'app-linegraphs',
+  templateUrl: './linegraphs.component.html',
+  styleUrls: ['./linegraphs.component.css']
 })
-export class LinegraphComponent implements OnInit {
+export class LinegraphsComponent implements OnInit {
+
   selected: any = { startDate: moment, endDate: moment };
   seriesData = [2, 4, 3, 8, 7, 12];
   tempData = [2, 5, 8, 4, 6, 5];
-  temp = false;
-  kebab = '../../assets/images/kebab.svg';
 
-  timePeriod : any = ['Yearly', 'Monthly', 'Weekly']
   onInputChng(){
     this.seriesData = this.tempData;
+    console.log("hi");
   }
-  constructor(public fb: FormBuilder) {}
-   timeForm = this.fb.group({
-     name : ['']
-   })
+  kebab = '../../assets/images/kebab.svg';
+  
+  constructor() {}
 
   public options: any = {
     chart: {},
@@ -62,7 +60,7 @@ export class LinegraphComponent implements OnInit {
       },
     },
     series: [
-      { 
+      {
         data: this.seriesData,
         type: 'line',
       },
@@ -72,7 +70,7 @@ export class LinegraphComponent implements OnInit {
   sminDate: any;
 
   ngOnInit(): void {
-    Highcharts.chart('container', this.options);
+    Highcharts.chart('containerSc', this.options);
     const current = new Date();
     this.sminDate = {
       year: current.getFullYear(),

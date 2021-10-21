@@ -1,4 +1,4 @@
-#container{
+#containerSc{
     border: 1px solid lightgray;
     border-radius: 0px;
 
@@ -6,9 +6,6 @@
 .container-fluid{
     padding: 0px;
     
-}
-.input{
-    margin-top: 10px;
 }
 .row{
     padding: 0px;
