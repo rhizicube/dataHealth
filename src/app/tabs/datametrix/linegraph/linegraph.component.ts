@@ -27,7 +27,11 @@ More(Highcharts);
 })
 export class LinegraphComponent implements OnInit {
 selected: any = {startDate: moment, endDate: moment};
-
+seriesData  = [2, 4, 3, 8, 7, 12];
+kebab = '../../assets/images/kebab.svg';
+onTip(){
+  alert("i am tool");
+}
   constructor() { }
 
   public options: any = {
@@ -55,12 +59,13 @@ selected: any = {startDate: moment, endDate: moment};
       }
     },
     series: [{
-      data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, ],
+      data: this.seriesData,
       type: 'line'
     },
     
   ]
   }
+  
   sminDate:any;
     
   ngOnInit(): void {

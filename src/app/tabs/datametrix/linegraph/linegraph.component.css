@@ -1,6 +1,6 @@
 #container{
     border: 1px solid lightgray;
-    border-radius: 10px;
+    border-radius: 0px;
 
 }
 .container-fluid{
@@ -9,6 +9,20 @@
 }
 .row{
     padding: 0px;
+}
+h3{
+    font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+letter-spacing: 0.416667px;
+
+/* Font-0 */
+
+color: #17173A;
 }
 /* .col-12{
     padding: 0px;

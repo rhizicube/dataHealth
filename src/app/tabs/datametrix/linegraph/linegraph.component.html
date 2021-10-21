@@ -1,43 +1,35 @@
 <div class="container-fluid">
     <div class="row">
-        <!-- <div class="col-12">
+        <div class="col-12" style=" width: 90%">
             <div class="card">
-                <div class="card-body">
-                    <p>Title</p>
+                <div class="card-body" style="display: inline;">
+                    <h3 style="display: inline;">Data ingestion metrics</h3>
+                    <img style="display: inline; margin-left: 10px; width: 15px; height: 15px;" src = "https://cdn3.iconfinder.com/data/icons/ui-ux-circles-1/24/info-circle-512.png" data-toggle="tooltip" data-placement="left"ngbTooltip="I am Bootstrap Tooltip"/>
+                    <!-- <a href="#" data-toggle="tooltip" data-placement="left"ngbTooltip="I am Bootstrap Tooltip">i</a> -->
+                    <img [src] = "kebab" style="position: absolute; top: 10px; right: 10px;" />
+                    <hr>
+                    <label>Date Range</label>
+                    <input ngxDaterangepickerMd [(ngModel)]="selected" class="form-control"
+                     style="width: 180px; height:30px; font-size: 12px;"/>
                 </div>
             </div>
-        </div> -->
-        <div class="col-12">
-            <!-- <select id="myselect">
-                <option value="green">green</option>
-                <option value="red">red</option>
-                <option value="blue">blue</option>
-            </select> -->
-            <input ngxDaterangepickerMd [(ngModel)]="selected" class="form-control" style="width: 250px;"/>
-            <div id="container" style="padding: 0px; width: 90%">
+        </div>
+        
+        <div class="col-12" style=" width: 90%">
+            <div id="container" >
+        </div>
+            
                 
-            </div>
+           
             
         </div>
         
     </div>
 </div>
 
-<!-- <div class="boxChart__container">
-    <div>
-      <highcharts-chart
-        id="container"
-        [Highcharts]="Highcharts"
-        [constructorType]="chartConstructor"
-        [options]="chartOptions"
-        [callbackFunction]="chartCallback"
-        [(update)]="updateFromInput"
-        [oneToOne]="true"
-        style="width: 100%; height: 400px; display: block;"
-      >
-      </highcharts-chart>
-  
-      <button (click)="setExtremes()">Set chart extremes</button>
-    </div>
-  </div>
-   -->
+
+<!-- <select id="myselect">
+                <option value="green">green</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+            </select> -->
