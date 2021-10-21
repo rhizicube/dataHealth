@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +30,10 @@ import { LinegraphComponent } from './tabs/datametrix/linegraph/linegraph.compon
     BrowserModule,
     AppRoutingModule,
      NgbModule,
-     HighchartsChartModule
+     FormsModule,
+      ReactiveFormsModule,
+     HighchartsChartModule,
+     NgxDaterangepickerMd.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

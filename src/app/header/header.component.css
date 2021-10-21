@@ -108,9 +108,9 @@ h4 {
 }
 .side-navbar {
   width: 240px;
- min-height: 126.5vh;
+ min-height: 150vh;
  max-height: 100%;
-  flex: content;
+  
   position: absolute;
   margin-left: -300px;
   background-color: rgba(20, 63, 147, 1);
