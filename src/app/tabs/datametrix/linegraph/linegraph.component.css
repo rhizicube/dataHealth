@@ -1,16 +1,18 @@
 
 #container{
+    height: 350px;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
-    border-radius: 0px;
-
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .card{
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
     border-bottom: 0px ;
-    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
 }
 .container-fluid{

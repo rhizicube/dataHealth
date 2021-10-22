@@ -3,7 +3,7 @@ import * as moment from 'moment';
 import { FormBuilder } from "@angular/forms";
 // import * as Highcharts from 'highcharts';
 import * as Highcharts from 'highcharts/highstock';
-import * as HighchartsMore from 'highcharts/highcharts-more';
+// import * as HighchartsMore from 'highcharts/highcharts-more';
 import * as HighchartsExporting from 'highcharts/modules/exporting';
 
 // HighchartsMore(Highcharts);
@@ -39,11 +39,13 @@ export class LinegraphComponent implements OnInit {
   //   console.log(this.seriesData);
   // }
   constructor(public fb: FormBuilder) {}
+
+
    timeForm = this.fb.group({
      name : ['']
    })
 
-  public options: any = {
+   options: any = {
     chart: {},
     title: {
       text: null,
@@ -71,7 +73,7 @@ export class LinegraphComponent implements OnInit {
   };
 onInputChng(){
   
-  this.options.addSeries(this.tempData,false)
+  // this.options.addSeries(this.tempData,false)
   
   
   
