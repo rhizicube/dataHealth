@@ -1,5 +1,15 @@
+
 #container{
-    border: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-radius: 0px;
+
+}
+.card{
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 0px ;
     border-radius: 0px;
 
 }

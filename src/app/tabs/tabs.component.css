@@ -12,7 +12,7 @@
   display: inline;
 } */
 #id1{
- 
+
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -24,6 +24,7 @@
   margin-bottom: 14px;
 }
 #id2 {
+  
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -31,8 +32,15 @@
   line-height: 22px;
   color: #143f93;
   padding: 0px;
-  margin-left: 22%;
+ margin-left: 10px;
   margin-bottom: 14px;
+}
+li:focus-within {
+ border-bottom: 3px solid #143f93;
+  width: 110px;
+}
+#li2{
+  margin-left: 10%;
 }
 /* li.a:active, a:focus{
   border-bottom: 4px solid blue;

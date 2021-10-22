@@ -34,9 +34,10 @@ export class LinegraphComponent implements OnInit {
   kebab = '../../assets/images/kebab.svg';
 
   timePeriod : any = ['Yearly', 'Monthly', 'Weekly']
-  onInputChng(){
-    this.seriesData = this.tempData;
-  }
+  // onInputChng(){
+  //   this.seriesData = this.tempData;
+  //   console.log(this.seriesData);
+  // }
   constructor(public fb: FormBuilder) {}
    timeForm = this.fb.group({
      name : ['']
@@ -68,7 +69,14 @@ export class LinegraphComponent implements OnInit {
       },
     ],
   };
-
+onInputChng(){
+  
+  this.options.addSeries(this.tempData,false)
+  
+  
+  
+ 
+}
   sminDate: any;
 
   ngOnInit(): void {

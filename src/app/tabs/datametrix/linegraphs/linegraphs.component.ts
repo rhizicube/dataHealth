@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
+import { FormBuilder } from "@angular/forms";
 // import * as Highcharts from 'highcharts';
 import * as Highcharts from 'highcharts/highstock';
 import * as HighchartsMore from 'highcharts/highcharts-more';
@@ -37,8 +38,12 @@ export class LinegraphsComponent implements OnInit {
     console.log("hi");
   }
   kebab = '../../assets/images/kebab.svg';
-  
-  constructor() {}
+  timePeriod : any = ['Yearly', 'Monthly', 'Weekly']
+  constructor(public fb: FormBuilder) {}
+  timeForm = this.fb.group({
+    name : ['']
+  })
+
 
   public options: any = {
     chart: {},
