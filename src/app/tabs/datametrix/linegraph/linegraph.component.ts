@@ -1,11 +1,10 @@
-
-import { Component, OnInit } from "@angular/core";
-import * as Highcharts from "highcharts";
+import { Component, OnInit } from '@angular/core';
+import * as Highcharts from 'highcharts';
 import * as moment from 'moment';
- import { FormBuilder } from "@angular/forms";
-import * as HighchartsMore from "highcharts/highcharts-more";
-import * as HighchartsExporting from "highcharts/modules/exporting";
- declare var require: any;
+import { FormBuilder } from '@angular/forms';
+import * as HighchartsMore from 'highcharts/highcharts-more';
+import * as HighchartsExporting from 'highcharts/modules/exporting';
+declare var require: any;
 const More = require('highcharts/highcharts-more');
 More(Highcharts);
 
@@ -16,85 +15,83 @@ More(Highcharts);
 
 @Component({
   selector: 'app-linegraph',
-    templateUrl: './linegraph.component.html',
-   styleUrls: ['./linegraph.component.css'],
+  templateUrl: './linegraph.component.html',
+  styleUrls: ['./linegraph.component.css'],
 })
 export class LinegraphComponent implements OnInit {
-  
   selected: any = { startDate: moment, endDate: moment };
-    seriesData = [2, 4, 3, 8, 7, 12];
-    tempData = [2, 5, 8, 4, 6, 5];
-    temp = false;
-    kebab = '../../assets/images/kebab.svg';
-  
-    timePeriod : any = ['Yearly', 'Monthly', 'Weekly']
-   
+  seriesData = [2, 4, 3, 8, 7, 12];
+  tempData = [2, 5, 8, 4, 6, 5];
+  temp = false;
+  kebab = '../../assets/images/kebab.svg';
+
+  timePeriod: any = ['Yearly', 'Monthly', 'Weekly'];
 
   chart: any;
   updateFlag = false;
   Highcharts = Highcharts;
-  chartConstructor = "chart";
+  chartConstructor = 'chart';
   chartCallback: any;
-  
+
   chartOptions: any = {
-    
-   title: {
-     text: null,
-   },
+    title: {
+      text: null,
+    },
     series: [
       {
-        data: [1, 2, 3, 6, 9,8]
-      }
+        data: [1, 2, 3, 6, 9, 8],
+      },
     ],
+    credits: {
+      enabled: false,
+    },
     exporting: {
-      enabled: true
+      enabled: true,
     },
     xAxis: {
-            title: {
-              text: 'Date',
-            },
-            categories: ['Jan20', 'Feb20', 'Mar20', 'Apr20', 'May20', 'Jun20'],
-          },
+      title: {
+        text: 'Date',
+      },
+      categories: ['Jan20', 'Feb20', 'Mar20', 'Apr20', 'May20', 'Jun20'],
+    },
     yAxis: {
       allowDecimals: false,
       title: {
-        text: "Data"
-      }
-    }
+        text: 'Data',
+      },
+    },
   };
 
   constructor(public fb: FormBuilder) {
     const self = this;
 
     this.chartCallback = (chart: any) => {
-      
       self.chart = chart;
     };
   }
   timeForm = this.fb.group({
-         name : ['']
-       })
+    name: [''],
+  });
   ngOnInit() {}
 
   updateChart() {
-    console.log("kii");
+    console.log('kii');
     const self = this,
       chart = this.chart;
 
     chart.showLoading();
     setTimeout(() => {
       chart.hideLoading();
-      let rend = Math.floor(Math.random()*10+1);
+      let rend = Math.floor(Math.random() * 10 + 1);
       console.log(rend);
       let temp = [10, 25, 20, 6];
       temp.push(rend);
-      let rend1 = Math.floor(Math.random()*10+1);
+      let rend1 = Math.floor(Math.random() * 10 + 1);
       temp.push(rend1);
       self.chartOptions.series = [
         {
-          data: temp
+          data: temp,
         },
-        
       ];
 
       // self.chartOptions.title = {

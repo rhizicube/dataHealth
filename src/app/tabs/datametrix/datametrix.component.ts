@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatametrixComponent implements OnInit {
   constructor() {}
-    thumb = '.../../assets/images/png/thumb-up.png';
+  thumb = '.../../assets/images/png/thumb-up.png';
   ngOnInit(): void {}
   dataCard: {
     title: string;
@@ -23,8 +23,8 @@ export class DatametrixComponent implements OnInit {
       value1: 200,
       subTitle2: 'Exported',
       value2: 500,
-      // icon:  '../../assets/images/group.png',
-      icon: '.../../assets/images/png/bg-card-count.png'
+      
+      icon: '.../../assets/images/png/bg-card-count.png',
     },
     {
       title: 'Total connections',
@@ -32,7 +32,7 @@ export class DatametrixComponent implements OnInit {
       value1: 21,
       subTitle2: 'Destination',
       value2: 12,
-      icon:  '.../../assets/images/png/bg-card-count.png',
+      icon: '.../../assets/images/png/bg-card-count.png',
     },
   ];
 }
