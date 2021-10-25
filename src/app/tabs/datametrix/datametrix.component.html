@@ -1,41 +1,12 @@
 <div class="container-fluid">
   <div class="row">
-    <button class="btn btn-primary"
-     style="width: 200px; height:36px; font-size: 14px; font-weight: 700; position: absolute; top: 100px; right: 25px; background-color: #143f93">
-     Connectors's Health</button>
+    <button id="btn1" class="btn btn-primary">Connectors's Health</button>
     <div class="col-12">
       <div class="card">
         <div class="card-body">
-          <img
-            [src]="thumb"
-            style="
-              height: 20px;
-              width: 20px;
-              position: absolute;
-              top: 10px;
-              left: 10px;
-            "
-          />
-          <p
-            style="
-              margin-left: 40px;
-              margin-top: 10px;
-              font-size: 16px;
-              font-weight: 700;
-            "
-          >
-            Everything is running smoothly
-          </p>
-          <p
-            style="
-              margin-left: 40px;
-              margin-top: 10px;
-              font-size: 14px;
-              font-weight: 400;
-            "
-          >
-            All server sides are running smoothly
-          </p>
+          <img id="thumb" [src]="thumb" />
+          <p id="p1">Everything is running smoothly</p>
+          <p id="p2">All server sides are running smoothly</p>
           <button type="button" class="btn btn-outline-primary">
             Keep me notified
           </button>
@@ -44,45 +15,37 @@
     </div>
     <div class="row" id="row2">
       <div class="col-4" *ngFor="let card of dataCard">
-        <div class="card" id="card2" style="height: 85px; width: 90%">
+        <div class="card" id="card2">
           <div class="card-body">
-            <p style="font-size: 14px; margin-left: 10px;">{{ card.title }}</p>
-            <p style="display: inline; font-size: 18px; font-style: normal;
-            font-weight: bold; margin-left: 10px; ">
+            <p id="p3">{{ card.title }}</p>
+            <p id="p4">
               {{ card.value1 }}
             </p>
-            
-            <p style="display: inline; font-size: 18px; font-style: normal;
-            font-weight: bold; margin-left: 25px;">{{ card.value2 }}</p>
-            <br />
-            <p style="display: inline; font-size: 12px;margin-left: 10px;">{{ card.subTitle1 }}</p>
-            <p style="display: inline; font-size: 12px; margin-left: 10px;">{{ card.subTitle2 }}</p>
 
-            <img
-              [src]="card.icon"
-              alt="icon"
-              style="
-                width: 75px;
-                height: 75px;
-                position: absolute;
-                bottom: 0px;
-                right: 0px;
-              "
-            />
+            <p id="p4" style="margin-left: 25px">
+              {{ card.value2 }}
+            </p>
+            <br />
+            <p id="p5">
+              {{ card.subTitle1 }}
+            </p>
+            <p id="p5">
+              {{ card.subTitle2 }}
+            </p>
+
+            <img id="cardImg" [src]="card.icon" alt="icon" />
           </div>
         </div>
       </div>
     </div>
-    <!-- <div style="padding: 0px;"> -->
+
     <div class="row" id="row3">
-      <div class="col-6" style="padding: 0;">
+      <div class="col-6" style="padding: 0">
         <app-linegraph></app-linegraph>
       </div>
       <div class="col-6">
         <app-linegraphs></app-linegraphs>
       </div>
-
-      <!-- </div> -->
     </div>
   </div>
 </div>

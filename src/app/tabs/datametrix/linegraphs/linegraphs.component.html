@@ -1,57 +1,48 @@
 <div class="container-fluid" style="margin-left: 20px">
   <div class="row">
-    <div class="col-6" style="width: 100%">
-      <div class="card" style="border-top: 1px solid lightgray">
-        <div class="card-body" style="display: inline">
-          <h3 style="display: inline">Total Connections</h3>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h3>Total Connections</h3>
           <img
-            style="
-              display: inline;
-              margin-left: 10px;
-              width: 15px;
-              height: 15px;
-            "
+            id="tooltip"
             src="https://cdn3.iconfinder.com/data/icons/ui-ux-circles-1/24/info-circle-512.png"
             data-toggle="tooltip"
             data-placement="bottom"
             ngbTooltip="Data info tooltip"
           />
-          
-          <img
-            [src]="kebab"
-            style="position: absolute; top: 17px; right: 10px"
-          />
+
+          <img id="kebab" [src]="kebab" />
           <hr />
           <div class="row">
             <div class="col-4">
-          <label>Date Range</label>
-          <input
-            ngxDaterangepickerMd
-            [(ngModel)]="selected"
-            class="form-control"
-            (change)="updateChart()"
-            style="width: 180px; height: 30px; font-size: 14px"
-          />
-        </div>
-        <div class="col-4" style="margin-left: 65px;">
-          <form
-            [formGroup]="timeForm"
-           
-          >
-          <label >Time Period</label>
-            <select formControlName="name"style="width:150px;height:30px; display: inline; border: 1px solid lightgrey; border-radius: 4px;">
-              <option disabled>Time Period</option>
-              <option></option>
-              <option *ngFor="let time of timePeriod">{{ time }}</option>
-            </select>
-          </form>
-        </div>
-        </div>
+              <label>Date Range</label>
+              <input
+                id="input"
+                ngxDaterangepickerMd
+                [(ngModel)]="selected"
+                class="form-control"
+                [ranges]="ranges"
+                [alwaysShowCalendars]="true"
+                (change)="updateChart()"
+              />
+            </div>
+            <div id="col4" class="col-4">
+              <form [formGroup]="timeForm">
+                <label>Time Period</label>
+                <select id="time" formControlName="name" (change)="updateChart()">
+                  <option disabled>Time Period</option>
+                  <option></option>
+                  <option *ngFor="let time of timePeriod">{{ time }}</option>
+                </select>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col-6" style="width: 100%">
+    <div class="col-6">
       <highcharts-chart
         id="containerSc"
         [Highcharts]="Highcharts"

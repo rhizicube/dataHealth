@@ -1,20 +1,30 @@
 .container-fluid {
   overflow: hidden;
+  padding: 0px;
+  margin-right: 20px;
 }
-.col-6{
+.col-6 {
   width: 100%;
 }
-label{
+#col4 {
+  margin-left: 50px;
+}
+#time {
+  width: 150px;
+  height: 30px;
+  display: inline;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+label {
   font-family: Nunito;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.291667px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.291667px;
 
-
-
-color: #6F6F8D;
+  color: #6f6f8d;
 }
 
 #container {
@@ -32,23 +42,42 @@ color: #6F6F8D;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.container-fluid {
+.card-body {
+  display: inline;
+  border-radius: 0px;
+}
+#tooltip {
+  display: inline;
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+}
+#kebab {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+#input {
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  margin-bottom: 0px;
   padding: 0px;
 }
 .input {
   margin-top: 10px;
   font-family: Nunito;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 19px;
-/* identical to box height */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
 
-letter-spacing: 0.291667px;
+  letter-spacing: 0.291667px;
 
-/* Font-0 */
+  /* Font-0 */
 
-color: #17173A;
+  color: #17173a;
 }
 .row {
   padding: 0px;

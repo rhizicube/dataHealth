@@ -13,20 +13,50 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.card-body {
+  display: inline;
+}
+h3 {
+  display: inline;
+}
+#tooltip {
+  display: inline;
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+}
+#kebab {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+#input {
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+}
+#col4 {
+  margin-left: 65px;
+}
+#time {
+  width: 150px;
+  height: 30px;
+  display: inline;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
 .container-fluid {
   padding: 0px;
 }
-label{
+label {
   font-family: Nunito;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.291667px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.291667px;
 
-
-
-color: #6F6F8D;
+  color: #6f6f8d;
 }
 .row {
   padding: 0px;
@@ -38,14 +68,11 @@ h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
 
   letter-spacing: 0.416667px;
 
-  /* Font-0 */
-
   color: #17173a;
 }
-/* .col-12{
-    padding: 0px;
-} */
+.col-6 {
+  width: 100%;
+}
