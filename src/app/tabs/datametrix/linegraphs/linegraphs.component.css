@@ -55,7 +55,6 @@ label {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.291667px;
-
   color: #6f6f8d;
 }
 .row {
@@ -68,9 +67,7 @@ h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
-
   letter-spacing: 0.416667px;
-
   color: #17173a;
 }
 .col-6 {

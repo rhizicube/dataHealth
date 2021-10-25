@@ -7,34 +7,34 @@
   padding: 0px;
   margin: 0px;
 }
-#btn1{
+#btn1 {
   width: 200px;
-   height:36px; 
-   font-size: 14px; 
-   font-weight: 700;
-    position: absolute; 
-    top: 100px;
-     right: 25px;
-      background-color: #143f93
+  height: 36px;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  top: 100px;
+  right: 25px;
+  background-color: #143f93;
 }
-#thumb{
+#thumb {
   height: 20px;
-              width: 20px;
-              position: absolute;
-              top: 10px;
-              left: 10px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
-#p1{
+#p1 {
   margin-left: 40px;
-              margin-top: 10px;
-              font-size: 16px;
-              font-weight: 700;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
 }
-#p2{
+#p2 {
   margin-left: 40px;
-              margin-top: 10px;
-              font-size: 14px;
-              font-weight: 400;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
 }
 .col-12 {
   padding: 0px;
@@ -96,30 +96,37 @@ p {
   padding: 0px;
   margin: 5px;
 }
-#p3{
+#p3 {
   font-size: 14px;
-   margin-left: 10px;
+  margin-left: 10px;
 }
-#p4{
+#p4 {
   display: inline;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: bold;
-                margin-left: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 10px;
 }
-#p5{
-  display: inline; font-size: 12px; margin-left: 10px
+#p5 {
+  display: inline;
+  font-size: 12px;
+  margin-left: 10px;
 }
-#cardImg{
+#p6 {
+  display: inline;
+  font-size: 12px;
+  margin-left: 10px;
+}
+#cardImg {
   width: 75px;
-                height: 75px;
-                position: absolute;
-                bottom: 0px;
-                right: 0px;
+  height: 75px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 #card2 {
   height: 85px;
-   width: 90%;
+  width: 90%;
   background-color: rgba(255, 255, 255, 0.9);
 
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);

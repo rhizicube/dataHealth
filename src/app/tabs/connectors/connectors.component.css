@@ -1,7 +1,5 @@
 .container-fluid {
   padding: 0px;
-  
-  
 }
 #source {
   padding: 0px;
@@ -63,30 +61,30 @@ h5 {
 }
 h6 {
   font-family: Nunito;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 20px;
-  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+
   position: absolute;
   left: 50px;
   top: 10px;
 }
 #desc {
   font-family: Nunito;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 
-/* Font/Font-1 */
+  /* Font/Font-1 */
 
-color: #6F6F8D;
+  color: #6f6f8d;
 
-opacity: 0.9;
+  opacity: 0.9;
   position: absolute;
   top: 35px;
   left: 50px;
@@ -107,26 +105,25 @@ opacity: 0.9;
   top: 10px;
   right: 30px;
 }
-#imgdown1 {
+.imgdown1 {
   position: relative;
   margin-top: 150px;
   display: flex;
   justify-content: center;
 }
-#imgdown2 {
-  
+.imgdown2 {
   border-radius: 100px;
   height: 35%;
   width: 35%;
   box-shadow: 0 0 10px 20px lightgrey;
 }
-#imgup1 {
+.imgup1 {
   position: relative;
   margin-top: 10px;
   display: flex;
   justify-content: center;
 }
-#imgup2 {
+.imgup2 {
   border-radius: 100px;
   height: 123px;
   width: 123px;
@@ -350,13 +347,12 @@ opacity: 0.9;
   width: 14%;
 }
 .card:first-child {
- 
   border: 1px solid lightGray;
   box-sizing: border-box;
   border-radius: 15px 15px 0px 0px;
 }
-.card:last-child{
+.card:last-child {
   border: 1px solid lightGray;
   box-sizing: border-box;
-  border-radius:  0px 0px 15px 15px;
+  border-radius: 0px 0px 15px 15px;
 }

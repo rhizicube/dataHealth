@@ -30,7 +30,11 @@
             <div id="col4" class="col-4">
               <form [formGroup]="timeForm">
                 <label>Time Period</label>
-                <select id="time" formControlName="name" (change)="updateChart()">
+                <select
+                  id="time"
+                  formControlName="name"
+                  (change)="updateChart()"
+                >
                   <option disabled>Time Period</option>
                   <option></option>
                   <option *ngFor="let time of timePeriod">{{ time }}</option>
