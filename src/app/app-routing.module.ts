@@ -13,7 +13,7 @@ import { DatametrixComponent } from './tabs/datametrix/datametrix.component';
 
 
 const routes: Routes = [
-  {path: '', component: ConnectorsComponent},
+  {path: '', component: DatametrixComponent},
   {path: 'Data', component: DatametrixComponent},
   {path:'Connectors' , component: ConnectorsComponent}
 ];

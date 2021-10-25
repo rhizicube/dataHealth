@@ -20,6 +20,7 @@ More(Highcharts);
 })
 export class LinegraphComponent implements OnInit {
   selected: any = { startDate: moment, endDate: moment };
+  selectedTotal: any = { startDate: moment, endDate: moment };
   seriesData = [2, 4, 3, 8, 7, 12];
   tempData = [2, 5, 8, 4, 6, 5];
   temp = false;
@@ -28,11 +29,12 @@ export class LinegraphComponent implements OnInit {
   timePeriod: any = ['Yearly', 'Monthly', 'Weekly'];
 
   chart: any;
+  chart2: any;
   updateFlag = false;
   Highcharts = Highcharts;
-  chartConstructor = 'chart';
+  // chartConstructor = 'chart';
   chartCallback: any;
-
+  
   chartOptions: any = {
     title: {
       text: null,
@@ -62,20 +64,50 @@ export class LinegraphComponent implements OnInit {
     },
   };
 
-  constructor(public fb: FormBuilder) {
-    const self = this;
+  // right side chart
+  // chartOptionsTotal: any = {
+  //   title: {
+  //     text: null,
+  //   },
+  //   series: [
+  //     {
+  //       data: [1, 2, 3, 6, 9, 8],
+  //     },
+  //   ],
+  //   credits: {
+  //     enabled: false,
+  //   },
+  //   exporting: {
+  //     enabled: true,
+  //   },
+  //   xAxis: {
+  //     title: {
+  //       text: 'Date',
+  //     },
+  //     categories: ['Jan20', 'Feb20', 'Mar20', 'Apr20', 'May20', 'Jun20'],
+  //   },
+  //   yAxis: {
+  //     allowDecimals: false,
+  //     title: {
+  //       text: 'Data',
+  //     },
+  //   },
+  // };
 
-    this.chartCallback = (chart: any) => {
-      self.chart = chart;
-    };
-  }
+  constructor(public fb: FormBuilder) {}
   timeForm = this.fb.group({
     name: [''],
   });
-  ngOnInit() {}
-
+  ngOnInit() {
+    // Highcharts.chart('container', this.chartOptions);
+    // Highcharts.chart('containerSc', this.chartOptionsTotal);
+  }
   updateChart() {
-    console.log('kii');
+    console.log('working');
+    this.chartCallback = (chart: any) => {
+      self.chart = chart;
+    };
+    console.log('hii');
     const self = this,
       chart = this.chart;
 
@@ -94,11 +126,34 @@ export class LinegraphComponent implements OnInit {
         },
       ];
 
-      // self.chartOptions.title = {
-      //   text: "Updated title!"
-      // };
-
       self.updateFlag = true;
     }, 2000);
   }
+
+  // updateChartTotal() {
+  //   this.chartCallback = (chart: any) => {
+  //     self.chart2 = chart;
+  //   };
+  //   console.log('kii');
+  //   const self = this,
+  //     chart2 = this.chart2;
+
+  //   chart2.showLoading();
+  //   setTimeout(() => {
+  //     chart2.hideLoading();
+  //     let rendom = Math.floor(Math.random() * 10 + 1);
+  //     console.log(rendom);
+  //     let tempSer = [10, 25, 20, 6];
+  //     tempSer.push(rendom);
+  //     let rend1 = Math.floor(Math.random() * 10 + 1);
+  //     tempSer.push(rend1);
+  //     self.chartOptionsTotal.series = [
+  //       {
+  //         data: tempSer,
+  //       },
+  //     ];
+
+  //     self.updateFlag = true;
+  //   }, 2000);
+  // }
 }

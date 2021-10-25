@@ -20,9 +20,9 @@ export class DatametrixComponent implements OnInit {
     {
       title: 'Data points processed',
       subTitle1: 'Ingested',
-      value1: 200,
+      value1: 2000,
       subTitle2: 'Exported',
-      value2: 500,
+      value2: 5000,
       
       icon: '.../../assets/images/png/bg-card-count.png',
     },

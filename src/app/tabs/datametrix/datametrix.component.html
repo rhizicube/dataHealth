@@ -1,5 +1,8 @@
 <div class="container-fluid">
   <div class="row">
+    <button class="btn btn-primary"
+     style="width: 200px; height:36px; font-size: 14px; font-weight: 700; position: absolute; top: 100px; right: 25px; background-color: #143f93">
+     Connectors's Health</button>
     <div class="col-12">
       <div class="card">
         <div class="card-body">
@@ -43,14 +46,17 @@
       <div class="col-4" *ngFor="let card of dataCard">
         <div class="card" id="card2" style="height: 85px; width: 90%">
           <div class="card-body">
-            <p style="font-size: 14px">{{ card.title }}</p>
-            <p style="display: inline; font-size: 12px; margin-left: 30px">
+            <p style="font-size: 14px; margin-left: 10px;">{{ card.title }}</p>
+            <p style="display: inline; font-size: 18px; font-style: normal;
+            font-weight: bold; margin-left: 10px; ">
               {{ card.value1 }}
             </p>
-            <p style="display: inline; font-size: 12px">{{ card.value2 }}</p>
+            
+            <p style="display: inline; font-size: 18px; font-style: normal;
+            font-weight: bold; margin-left: 25px;">{{ card.value2 }}</p>
             <br />
-            <p style="display: inline; font-size: 12px">{{ card.subTitle1 }}</p>
-            <p style="display: inline; font-size: 12px">{{ card.subTitle2 }}</p>
+            <p style="display: inline; font-size: 12px;margin-left: 10px;">{{ card.subTitle1 }}</p>
+            <p style="display: inline; font-size: 12px; margin-left: 10px;">{{ card.subTitle2 }}</p>
 
             <img
               [src]="card.icon"
@@ -69,7 +75,7 @@
     </div>
     <!-- <div style="padding: 0px;"> -->
     <div class="row" id="row3">
-      <div class="col-6">
+      <div class="col-6" style="padding: 0;">
         <app-linegraph></app-linegraph>
       </div>
       <div class="col-6">

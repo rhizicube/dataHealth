@@ -56,6 +56,9 @@ p {
 .card-body {
   padding: 0px;
 }
+/* p + p::before {
+  content: " | ";
+} */
 .col-4 {
   padding: 0px;
   width: 30%;

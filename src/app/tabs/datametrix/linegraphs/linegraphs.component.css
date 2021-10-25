@@ -16,6 +16,18 @@
 .container-fluid {
   padding: 0px;
 }
+label{
+  font-family: Nunito;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.291667px;
+
+
+
+color: #6F6F8D;
+}
 .row {
   padding: 0px;
   margin-right: 8px;

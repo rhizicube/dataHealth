@@ -1,6 +1,22 @@
 .container-fluid {
   overflow: hidden;
 }
+.col-6{
+  width: 100%;
+}
+label{
+  font-family: Nunito;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.291667px;
+
+
+
+color: #6F6F8D;
+}
+
 #container {
   height: 30px;
   border-left: 1px solid lightgray;
@@ -21,6 +37,18 @@
 }
 .input {
   margin-top: 10px;
+  font-family: Nunito;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.291667px;
+
+/* Font-0 */
+
+color: #17173A;
 }
 .row {
   padding: 0px;

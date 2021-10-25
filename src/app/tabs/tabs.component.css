@@ -33,15 +33,23 @@
   margin-left: 10px;
   margin-bottom: 14px;
 }
+li
+ {
+  border-bottom: 3px solid transparent;
+  width: 110px;
+}
 li:focus-within,
 li:active {
   border-bottom: 3px solid #143f93;
   width: 110px;
 }
 #li2 {
-  margin-left: 10%;
+  margin-left: 100px;
 }
-
+#id1 :active{
+  border-bottom: 3px solid #143f93;
+  width: 110px;
+}
 #id3 {
   width: 25%;
   height: 3px;
