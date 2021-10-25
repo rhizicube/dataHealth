@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +13,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TabsComponent } from './tabs/tabs.component';
 import { ConnectorsComponent } from './tabs/connectors/connectors.component';
 import { DataComponent } from './data/data.component';
+import { DatametrixComponent } from './tabs/datametrix/datametrix.component';
+import { LinegraphComponent } from './tabs/datametrix/linegraph/linegraph.component';
+import { LinegraphsComponent } from './tabs/datametrix/linegraphs/linegraphs.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +24,19 @@ import { DataComponent } from './data/data.component';
     MainpageComponent,
     TabsComponent,
     ConnectorsComponent,
-    DataComponent
+    DataComponent,
+    DatametrixComponent,
+    LinegraphComponent,
+    LinegraphsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-     NgbModule
+     NgbModule,
+     FormsModule,
+      ReactiveFormsModule,
+     HighchartsChartModule,
+     NgxDaterangepickerMd.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

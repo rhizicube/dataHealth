@@ -40,7 +40,10 @@ li:hover {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   cursor: grabbing;
-  background-color: lightblue !important;
+
+  background: #f4f8ff;
+  border-radius: 10px 0px 0px 10px;
+  color: #143f93 !important;
 }
 .collapse.navbar-collapse {
   display: block;
@@ -77,6 +80,7 @@ h4 {
 }
 #datahealthtxt {
   margin-top: 5px;
+  margin-left: 25px;
 }
 #datahealth {
   position: absolute;
@@ -104,27 +108,28 @@ h4 {
 }
 .side-navbar {
   width: 240px;
-  height: 120%;
-  flex: content;
+ min-height: 170vh;
+ max-height: 100%;
+  
   position: absolute;
   margin-left: -300px;
   background-color: rgba(20, 63, 147, 1);
   transition: 0.5s;
 }
 
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
-  background-color: #ffffff26;
+li:focus-within {
+  background: #f4f8ff;
+  border-radius: 10px 0px 0px 10px;
+  color: #143f93 !important;
+}
+a:focus-within {
+  background: #f4f8ff;
+  border-radius: 10px 0px 0px 10px;
+  color: #143f93 !important;
 }
 
 .active-nav {
   margin-left: 0;
-}
-
-/* for main section */
-.active-cont {
-  margin-left: 180px;
 }
 
 .input-group {
@@ -135,9 +140,7 @@ h4 {
 li {
   margin-left: 25px;
 }
-/* img {
-  margin-left: 5px;
-} */
+
 @media screen and (max-width: 500px) {
   .navbar.navbar-expand-lg.navbar-dark.bg-light {
     float: none;

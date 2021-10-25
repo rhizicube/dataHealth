@@ -1,0 +1,101 @@
+.container-fluid {
+  overflow: hidden;
+  padding: 0px;
+  margin-right: 20px;
+}
+.col-6 {
+  width: 100%;
+}
+#col4 {
+  margin-left: 50px;
+}
+#time {
+  width: 150px;
+  height: 30px;
+  display: inline;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+label {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.291667px;
+
+  color: #6f6f8d;
+}
+
+#container {
+  height: 30px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-body {
+  display: inline;
+  border-radius: 0px;
+}
+#tooltip {
+  display: inline;
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+}
+#kebab {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+#input {
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.input {
+  margin-top: 10px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  letter-spacing: 0.291667px;
+
+  /* Font-0 */
+
+  color: #17173a;
+}
+.row {
+  padding: 0px;
+}
+h3 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  letter-spacing: 0.416667px;
+
+  /* Font-0 */
+
+  color: #17173a;
+}
+/* .col-12{
+    padding: 0px;
+} */

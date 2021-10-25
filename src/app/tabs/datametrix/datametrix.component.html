@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row">
+    <button id="btn1" class="btn btn-primary">Connectors's Health</button>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <img id="thumb" [src]="thumb" />
+          <p id="p1">Everything is running smoothly</p>
+          <p id="p2">All server sides are running smoothly</p>
+          <button type="button" class="btn btn-outline-primary">
+            Keep me notified
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="row2">
+      <div class="col-4" *ngFor="let card of dataCard">
+        <div class="card" id="card2">
+          <div class="card-body">
+            <p id="p3">{{ card.title }}</p>
+            <p id="p4">
+              {{ card.value1 }}
+            </p>
+
+            <p id="p4" style="margin-left: 25px">
+              {{ card.value2 }}
+            </p>
+            <br />
+            <p id="p5">
+              {{ card.subTitle1 }}
+            </p>
+            <p id="p6">
+              {{ card.subTitle2 }}
+            </p>
+
+            <img id="cardImg" [src]="card.icon" alt="icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="row3">
+      <div class="col-6" style="padding: 0">
+        <app-linegraph></app-linegraph>
+      </div>
+      <div class="col-6">
+        <app-linegraphs></app-linegraphs>
+      </div>
+    </div>
+  </div>
+</div>

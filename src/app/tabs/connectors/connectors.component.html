@@ -15,9 +15,9 @@
   <div class="row">
     <div class="col-4">
       <div>
-        <div *ngFor="let s of source; let i = index">
+        <div class="card" *ngFor="let s of source; let i = index">
           <div class="col-12">
-            <div class="card">
+            <div>
               <div class="card-body">
                 <img [src]="s.logo" id="logo" />
                 <h6>
@@ -69,44 +69,40 @@
     <div class="col-4">
       <div
         *ngIf="source.length >= 4 && destination.length >= 4"
-        class="image"
-        id="imgdown1"
+        class="imgdown1"
       >
         <img
-          id="imgdown2"
+          class="imgdown2"
           src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
         />
       </div>
       <div
-        class="image"
-        id="imgup1"
+        class="imgup1"
         *ngIf="source.length < 4 && destination.length < 4"
         class="image"
       >
         <img
-          id="imgup2"
+          class="imgup2"
           src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
         />
       </div>
       <div
-        class="image"
-        id="imgup1"
+        class="imgup1"
         *ngIf="source.length >= 4 && destination.length < 4"
         class="image"
       >
         <img
-          id="imgup2"
+          class="imgup2"
           src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
         />
       </div>
       <div
-        class="image"
-        id="imgup1"
+        class="imgup1"
         *ngIf="source.length < 4 && destination.length >= 4"
         class="image"
       >
         <img
-          id="imgup2"
+          class="imgup2"
           src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1499690495/pkzoqurvoufjnoc539rs.jpg"
         />
       </div>
@@ -114,23 +110,27 @@
 
     <div class="col-4">
       <div>
-        <div *ngFor="let d of destination; let i = index">
-          <div class="col-12">
-            <div class="card" id="destCard">
-              <div class="card-body">
-                <img id="dLogo" [src]="d.logo" />
-                <h6>
-                  {{ d.title }}
-                </h6>
-                <p id="desc">
-                  {{ d.description }}
-                </p>
+        <div
+          class="card"
+          id="destCard"
+          *ngFor="let d of destination; let i = index"
+        >
+          <!-- <div class="col-12">
+            <div > -->
+          <div class="card-body">
+            <img id="dLogo" [src]="d.logo" />
+            <h6>
+              {{ d.title }}
+            </h6>
+            <p id="desc">
+              {{ d.description }}
+            </p>
 
-                <p id="value">{{ d.value }}K</p>
-                <img id="duserLogo" [src]="d.userLogo" />
-              </div>
-            </div>
+            <p id="value">{{ d.value }}K</p>
+            <img id="duserLogo" [src]="d.userLogo" />
           </div>
+          <!-- </div>
+          </div> -->
           <div *ngIf="destination.length == 1">
             <div class="div14"></div>
             <div class="div16"></div>

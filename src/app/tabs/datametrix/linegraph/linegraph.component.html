@@ -1,0 +1,124 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h3 style="display: inline">Data ingestion metrics</h3>
+          <img
+            id="tooltip"
+            src="https://cdn3.iconfinder.com/data/icons/ui-ux-circles-1/24/info-circle-512.png"
+            data-toggle="tooltip"
+            data-placement="left"
+            ngbTooltip="Data info tooltip"
+          />
+
+          <img id="kebab" [src]="kebab" />
+          <hr />
+          <div class="row">
+            <div class="col-4">
+              <label>Date Range</label>
+              <input
+                id="input"
+                ngxDaterangepickerMd
+                [(ngModel)]="selected"
+                class="form-control"
+                [ranges]="ranges"
+                [alwaysShowCalendars]="true"
+                (change)="updateChart()"
+              />
+            </div>
+            <div id="col4" class="col-4">
+              <form [formGroup]="timeForm">
+                <label>Time Period</label>
+                <select
+                  id="time"
+                  formControlName="name"
+                  (change)="updateChart()"
+                >
+                  <option disabled>Time Period</option>
+                  <option></option>
+                  <option *ngFor="let time of timePeriod">{{ time }}</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-6" >
+      <div class="card">
+        <div class="card-body" style="display: inline; border-radius: 0px">
+          <h3 style="display: inline">Total Connections</h3>
+          <img
+            style="
+              display: inline;
+              margin-left: 10px;
+              width: 15px;
+              height: 15px;
+            "
+            src="https://cdn3.iconfinder.com/data/icons/ui-ux-circles-1/24/info-circle-512.png"
+            data-toggle="tooltip"
+            data-placement="left"
+            ngbTooltip="Data info tooltip"
+          />
+
+          <img
+            [src]="kebab"
+            style="position: absolute; top: 10px; right: 10px"
+          />
+          <hr />
+          <label>Date Range</label>
+          <input 
+            ngxDaterangepickerMd
+            [(ngModel)]="selectedTotal"
+            class="form-control"
+            (change)="updateChartTotal()"
+            style="
+              width: 180px;
+              height: 30px;
+              font-size: 12px;
+              margin-bottom: 0px;
+              padding: 0px;
+            "
+          />
+
+          <form
+            [formGroup]="timeForm"
+            style="display: inline; position: absolute; top: 100px; right: 20px"
+          >
+            <select formControlName="name" style="display: inline">
+              <option disabled>Time Period</option>
+              <option></option>
+              <option *ngFor="let time of timePeriod">{{ time }}</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div> -->
+    <div class="col-6">
+      <highcharts-chart
+        id="container"
+        [Highcharts]="Highcharts"
+        [options]="chartOptions"
+        [callbackFunction]="chartCallback"
+        [(update)]="updateFlag"
+        [oneToOne]="true"
+        style="width: 100%; height: 350px; display: block"
+      >
+      </highcharts-chart>
+    </div>
+    <!-- <div class="col-6" >
+      <highcharts-chart
+        id="containerSc"
+        [Highcharts]="Highcharts"
+        
+        [options]="chartOptionsTotal"
+        [callbackFunction]="chartCallback"
+        [(update)]="updateFlag"
+        [oneToOne]="true"
+        style="width: 100%; height: 350px; display: block"
+      >
+      </highcharts-chart>
+    </div> -->
+  </div>
+</div>

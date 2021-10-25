@@ -2,15 +2,18 @@
   width: 100%;
   padding: 0px;
 }
-/* .row{
+
+#id1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #143f93;
   padding: 0px;
-} */
-/* .navbar-nav {
-  overflow: hidden;
+  margin-left: 25px;
+  margin-bottom: 14px;
 }
-.nav-item {
-  display: inline;
-} */
 #id2 {
   font-family: Nunito;
   font-style: normal;
@@ -18,14 +21,31 @@
   font-size: 16px;
   line-height: 22px;
   color: #143f93;
-  margin-left: 40px;
-  margin-bottom: -10px;
+  padding: 0px;
+  margin-left: 10px;
+  margin-bottom: 14px;
+}
+li {
+  border-bottom: 3px solid transparent;
+  width: 110px;
+}
+li:focus-within,
+li:active {
+  border-bottom: 3px solid #143f93;
+  width: 110px;
+}
+.list {
+  margin-left: 100px;
+}
+#id1 :active {
+  border-bottom: 3px solid #143f93;
+  width: 110px;
 }
 #id3 {
-  width: 17%;
+  width: 25%;
   height: 3px;
-  margin-left: -2%;
-
+  margin-left: 14%;
+  margin-bottom: 30px;
   padding: 0%;
 }
 img {
