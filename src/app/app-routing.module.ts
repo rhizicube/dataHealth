@@ -15,7 +15,8 @@ import { DatametrixComponent } from './tabs/datametrix/datametrix.component';
 const routes: Routes = [
   {path: '', component: DatametrixComponent},
   {path: 'Data', component: DatametrixComponent},
-  {path:'Connectors' , component: ConnectorsComponent}
+  {path:'Connectors' , component: ConnectorsComponent},
+  { path: '**', redirectTo: 'Data' } 
 ];
 
 @NgModule({

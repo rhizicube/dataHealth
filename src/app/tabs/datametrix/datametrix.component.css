@@ -126,7 +126,7 @@ p{
   margin-left: -10px;
   content:" | ";
   font-size: 30px;
-  
+  font-stretch: ultra-condensed;
   color: lightgray;
   opacity: 0.1px;
 }
