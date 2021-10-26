@@ -16,7 +16,11 @@
   border: 1px solid lightgrey;
   border-radius: 4px;
 }
+.lbl{
+  margin: 0px;
+}
 label {
+  margin-left: 16px;
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -44,6 +48,8 @@ label {
 }
 .card-body {
   display: inline;
+  padding-left: 0px;
+  padding-right: 0px;
   border-radius: 0px;
 }
 #tooltip {
@@ -55,9 +61,10 @@ label {
 #kebab {
   position: absolute;
   top: 17px;
-  right: 10px;
+  right: 20px;
 }
 #input {
+  margin-left: 16px;
   width: 180px;
   height: 30px;
   font-size: 14px;
@@ -65,6 +72,7 @@ label {
   padding: 0px;
 }
 .input {
+  
   margin-top: 10px;
   font-family: Nunito;
   font-style: normal;
@@ -83,6 +91,7 @@ label {
   padding: 0px;
 }
 h3 {
+  margin-left: 16px;
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;

@@ -1,20 +1,19 @@
 <div class="container-fluid">
   <div class="row">
     <ul style="list-style: none; display: flex">
-      <li>
+      <li  routerLinkActive="active" >
         <a
-          routerLink="Data"
+          routerLink="/Data"
           id="id1"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
+         
           class="nav-link active"
           href="#"
-          id="id1"
+          
         >
           Data
         </a>
       </li>
-      <li class="list">
+      <li class="list" >
         <a
           routerLink="/Connectors"
           id="id2"
@@ -26,6 +25,7 @@
         </a>
       </li>
     </ul>
+    <hr style="margin-top: -17px; margin-left: 10px;">
   </div>
 </div>
 <router-outlet></router-outlet>

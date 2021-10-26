@@ -63,10 +63,10 @@
   position: absolute;
   font-weight: 800;
   top: 20px;
-  right: 10px;
+  right: 20px;
   height: 30px;
   padding-bottom: 10px;
-  font-size: 12px;
+  font-size: 14px;
   color: #143f93;
 }
 p {
@@ -99,34 +99,52 @@ p {
 #p3 {
   font-size: 14px;
   margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #6F6F8D;
+}
+p{
+  padding: 0px;
 }
 #p4 {
-  display: inline;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  
   font-size: 18px;
   font-style: normal;
   font-weight: bold;
   margin-left: 10px;
 }
 #p5 {
-  display: inline;
+  
   font-size: 12px;
   margin-left: 10px;
 }
+#cont::before {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -10px;
+  content:" | ";
+  font-size: 30px;
+  
+  color: lightgray;
+  opacity: 0.1px;
+}
 #p6 {
-  display: inline;
+  
   font-size: 12px;
   margin-left: 10px;
 }
 #cardImg {
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  right: -10px;
 }
 #card2 {
-  height: 85px;
-  width: 90%;
+  height: 113px;
+  width: 95%;
   background-color: rgba(255, 255, 255, 0.9);
 
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
