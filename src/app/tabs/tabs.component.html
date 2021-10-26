@@ -1,31 +1,14 @@
 <div class="container-fluid">
   <div class="row">
     <ul style="list-style: none; display: flex">
-      <li  routerLinkActive="active" >
-        <a
-          routerLink="/Data"
-          id="id1"
-         
-          class="nav-link active"
-          href="#"
-          
-        >
-          Data
-        </a>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <p routerLink="/Data" id="id1"> Data </p>
       </li>
-      <li class="list" >
-        <a
-          routerLink="/Connectors"
-          id="id2"
-          routerLinkActive="active"
-          class="nav-link active"
-          href="#"
-        >
-          Connectors
-        </a>
-      </li>
+      <li routerLinkActive="active" class="list">
+        <p routerLink="/Connectors" id="id2"> Connectors </p>
+      </li >
     </ul>
-    <hr style="margin-top: -17px; margin-left: 10px;">
+    <hr style="margin-top: -17px; margin-left: 10px" />
   </div>
 </div>
 <router-outlet></router-outlet>

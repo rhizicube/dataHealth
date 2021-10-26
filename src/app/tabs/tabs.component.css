@@ -30,15 +30,19 @@ li {
   border-bottom: 3px solid transparent;
   width: 110px;
 }
+.active{
+  border-bottom: 3px solid #143f93;
+  width: 110px;
+}
 li:focus-within,
 li:active {
   border-bottom: 3px solid #143f93;
   width: 110px;
 }
-li:visited{
+/* li:visited{
   border-bottom: 3px solid #143f93;
   width: 110px;
-}
+} */
 .list {
   margin-left: 100px;
 }
