@@ -8,7 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class TabsComponent implements OnInit {
  line:boolean = true;
-  constructor(private route: Router) { }
+  constructor(private route: Router, private active: ActivatedRoute) { }
 
   ngOnInit(): void {
   }

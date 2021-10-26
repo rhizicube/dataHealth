@@ -13,10 +13,11 @@ import { DatametrixComponent } from './tabs/datametrix/datametrix.component';
 
 
 const routes: Routes = [
-  {path: '', component: DatametrixComponent},
+  {path:'', redirectTo:'Data', pathMatch:'full'},
+  // {path: '', component: DatametrixComponent},
   {path: 'Data', component: DatametrixComponent},
   {path:'Connectors' , component: ConnectorsComponent},
-  { path: '**', redirectTo: 'Data' } 
+  { path: '*', redirectTo: 'Data' } 
 ];
 
 @NgModule({
