@@ -36,6 +36,9 @@ export class LinegraphComponent implements OnInit {
   chartCallback: any;
 
   chartOptions: any = {
+    chart:{
+      styleMode: true
+    },
     title: {
       text: null,
     },
@@ -44,6 +47,9 @@ export class LinegraphComponent implements OnInit {
         data: [1, 2, 3, 6, 9, 8],
       },
     ],
+    styleMode:{
+      enabled:true
+    },
     credits: {
       enabled: false,
     },
@@ -63,7 +69,7 @@ export class LinegraphComponent implements OnInit {
       },
     },
   };
-
+  
   // right side chart
   // chartOptionsTotal: any = {
   //   title: {
