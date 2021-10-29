@@ -12,3 +12,17 @@ body {
   background-color: rgba(244, 248, 255, 1);
   padding: 0px;
 } */
+/* .highcharts-container svg {
+  width: 100% !important;
+  height: 100% !important;
+} */
+.highcharts-container
+{
+  position: absolute;
+  width: 100% !important;
+ }
+
+  .highcharts-container svg {
+     width: 100% !important;
+     height: 100% !important;
+  }

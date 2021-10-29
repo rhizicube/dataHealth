@@ -3,9 +3,9 @@
   padding: 0px;
   margin-right: 20px;
 }
-.col-6 {
+/* .col-6 {
   width: 100%;
-}
+} */
 #col4 {
   margin-left: 50px;
 }
@@ -31,24 +31,15 @@ label {
   color: #6f6f8d;
 }
 
-#container {
+.chart-container {
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   height: 350px;
-  max-width: 100%;
-  display: block;
-  /* display: inline-flex; */
+  width: 100%;
 }
-
-/* .highcharts-background{
- 
-  border-right: 1px solid lightgray;
-  width: 37.7vmax;
- height: 350px;
-} */
 
 .card {
   border-left: 1px solid lightgray;
@@ -97,9 +88,9 @@ label {
 
   color: #17173a;
 }
-.row {
+/* .row {
   padding: 0px;
-}
+} */
 h3 {
   margin-left: 16px;
   font-family: Nunito;

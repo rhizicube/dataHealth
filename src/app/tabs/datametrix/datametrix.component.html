@@ -1,55 +1,53 @@
-<div class="container-fluid">
-  <div class="row">
-    <button id="btn1" class="btn btn-primary">Connectors's Health</button>
-    <div class="col-12">
-      <div class="card">
-        <div class="card-body">
-          <img id="thumb" [src]="thumb" />
-          <p id="p1">Everything is running smoothly</p>
-          <p id="p2">All server sides are running smoothly</p>
-          <button type="button" class="btn btn-outline-primary">
-            Keep me notified
-          </button>
-        </div>
+<div style="width: 100%">
+  <button id="btn1" class="btn btn-primary">Connectors's Health</button>
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <img id="thumb" [src]="thumb" />
+        <p id="p1">Everything is running smoothly</p>
+        <p id="p2">All server sides are running smoothly</p>
+        <button type="button" class="btn btn-outline-primary">
+          Keep me notified
+        </button>
       </div>
     </div>
-    <div class="row" id="row2">
-      <div class="col-4" *ngFor="let card of dataCard">
-        <div class="card" id="card2">
-          <div class="card-body">
-            <p id="p3">{{ card.title }}</p>
-            <div class="row">
+  </div>
+  <div class="row" id="row2">
+    <div class="col-4" *ngFor="let card of dataCard">
+      <div class="card" id="card2">
+        <div class="card-body">
+          <p id="p3">{{ card.title }}</p>
+          <div class="row">
             <div class="col-4">
-            <p id="p4">
-              {{ card.value1 }}
-            </p>
-            <p id="p5">
-              {{ card.subTitle1 }}
-            </p>
-            
-          </div>
-            <div id = "cont" class="col-4">
-              <p id="p4" >
+              <p id="p4">
+                {{ card.value1 }}
+              </p>
+              <p id="p5">
+                {{ card.subTitle1 }}
+              </p>
+
+            </div>
+            <div id="cont" class="col-4">
+              <p id="p4">
                 {{ card.value2 }}
               </p>
-            <p id="p6">
-              {{ card.subTitle2 }}
-            </p>
-          </div>
+              <p id="p6">
+                {{ card.subTitle2 }}
+              </p>
+            </div>
             <img id="cardImg" [src]="card.icon" alt="icon" />
-          </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="row" id="row3">
-      <div class="col-6" style="padding: 0">
-        <app-linegraph></app-linegraph>
-      </div>
-      <div class="col-6">
-        <app-linegraphs></app-linegraphs>
-      </div>
+  <div style="display: flex;">
+    <div style="padding: 10px; width: 50%">
+      <app-linegraph [id]="1"></app-linegraph>
+    </div>
+    <div style="padding: 10px; width: 50%">
+      <app-linegraph [id]="2"></app-linegraph>
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import * as moment from 'moment';
 import { FormBuilder } from '@angular/forms';
@@ -19,12 +19,14 @@ More(Highcharts);
   styleUrls: ['./linegraph.component.css'],
 })
 export class LinegraphComponent implements OnInit {
+  @Input() id: any = 0;
   selected: any = { startDate: moment, endDate: moment };
   selectedTotal: any = { startDate: moment, endDate: moment };
   seriesData = [2, 4, 3, 8, 7, 12];
   tempData = [2, 5, 8, 4, 6, 5];
   temp = false;
   kebab = '../../assets/images/kebab.svg';
+  containerId = `container${this.id}`;
 
   timePeriod: any = ['Yearly', 'Monthly', 'Weekly'];
 
@@ -36,9 +38,6 @@ export class LinegraphComponent implements OnInit {
   chartCallback: any;
 
   chartOptions: any = {
-    chart:{
-      styleMode: true
-    },
     title: {
       text: null,
     },
@@ -47,9 +46,6 @@ export class LinegraphComponent implements OnInit {
         data: [1, 2, 3, 6, 9, 8],
       },
     ],
-    styleMode:{
-      enabled:true
-    },
     credits: {
       enabled: false,
     },
@@ -69,36 +65,6 @@ export class LinegraphComponent implements OnInit {
       },
     },
   };
-  
-  // right side chart
-  // chartOptionsTotal: any = {
-  //   title: {
-  //     text: null,
-  //   },
-  //   series: [
-  //     {
-  //       data: [1, 2, 3, 6, 9, 8],
-  //     },
-  //   ],
-  //   credits: {
-  //     enabled: false,
-  //   },
-  //   exporting: {
-  //     enabled: true,
-  //   },
-  //   xAxis: {
-  //     title: {
-  //       text: 'Date',
-  //     },
-  //     categories: ['Jan20', 'Feb20', 'Mar20', 'Apr20', 'May20', 'Jun20'],
-  //   },
-  //   yAxis: {
-  //     allowDecimals: false,
-  //     title: {
-  //       text: 'Data',
-  //     },
-  //   },
-  // };
 
   constructor(public fb: FormBuilder) {}
   timeForm = this.fb.group({
@@ -107,6 +73,7 @@ export class LinegraphComponent implements OnInit {
   ngOnInit() {
     // Highcharts.chart('container', this.chartOptions);
     // Highcharts.chart('containerSc', this.chartOptionsTotal);
+    this.chart?.reflow();
   }
   updateChart() {
     console.log('working');
@@ -115,7 +82,7 @@ export class LinegraphComponent implements OnInit {
     };
     console.log('hii');
     const self = this,
-      chart = this.chart;
+          chart = this.chart;
 
     chart.showLoading();
     setTimeout(() => {
@@ -133,6 +100,7 @@ export class LinegraphComponent implements OnInit {
       ];
 
       self.updateFlag = true;
+      // chart?.reflow();
     }, 2000);
   }
 

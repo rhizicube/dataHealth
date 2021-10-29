@@ -3,10 +3,6 @@
   height: 100%;
   padding: 0px;
 }
-.row {
-  padding: 0px;
-  margin: 0px;
-}
 #btn1 {
   width: 200px;
   height: 36px;
@@ -41,15 +37,8 @@
 .col-12 {
   padding: 0px;
 }
-.col-6 {
-  padding: 0px;
-}
 .col-3 {
   padding: 0px;
-}
-#row3 {
-  padding: 0px;
-  margin-top: 40px;
 }
 #row2 {
   margin-top: 40px;
