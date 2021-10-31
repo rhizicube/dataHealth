@@ -40,7 +40,7 @@
 .col-3 {
   padding: 0px;
 }
-#row2 {
+#cardrow {
   margin-top: 40px;
 }
 .card {
@@ -86,13 +86,16 @@ p {
   padding: 0px;
   width: 30%;
 }
+/* #cardmetrix{
+  margin-left: 15px;
+} */
 p {
   padding: 0px;
   margin: 5px;
 }
 #p3 {
   font-size: 14px;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 15px;
   margin-bottom: 0px;
   color: #6F6F8D;
@@ -121,17 +124,17 @@ color: #17173A;
   font-size: 18px;
   font-style: normal;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 #p5 {
   
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 #cont::before {
   position: absolute;
   margin-top: 15px;
-  margin-left: -10px;
+  margin-left: 0px;
   content:" | ";
   font-size: 30px;
   font-stretch: ultra-condensed;
@@ -141,8 +144,9 @@ color: #17173A;
 #p6 {
   
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 25px;
 }
+
 #cardImg {
   padding: 0px;
   width: 75px;
@@ -151,7 +155,8 @@ color: #17173A;
   bottom: -3px;
   right: 0px;
 }
-#card2 {
+#cardlayout {
+  margin-left: 13px;
   height: 100px;
   width: 95%;
   border-radius: 8px;

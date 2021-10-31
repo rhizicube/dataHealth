@@ -12,13 +12,13 @@
       </div>
     </div>
   </div>
-  <div class="row" id="row2">
+  <div class="row" id="cardrow">
     <div class="col-4" *ngFor="let card of dataCard">
-      <div class="card" id="card2">
-        <div class="card-body">
+      <div class="card" id="cardlayout" style="padding: 0px;">
+        <div class="card-body"  style="padding: 0px;"> 
           <p id="p3">{{ card.title }}</p>
           <div class="row">
-            <div class="col-4">
+            <div class="col-4" id = "cardmetrix">
               <p id="p4">
                 {{ card.value1 }}
               </p>
@@ -42,11 +42,11 @@
     </div>
   </div>
 
-  <div style="display: flex;">
-    <div style="padding: 10px; width: 50%">
+  <div  style="display: flex; margin-top:25px; padding: 0px; margin-right:-12px">
+    <div class="col-6">
       <app-linegraph [id]="1"></app-linegraph>
     </div>
-    <div style="padding: 10px; width: 50%">
+    <div class="col-6" style="padding: 0px;   margin-left:10px; ">
       <app-linegraph [id]="2"></app-linegraph>
     </div>
   </div>
