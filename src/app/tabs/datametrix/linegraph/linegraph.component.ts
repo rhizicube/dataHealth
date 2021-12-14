@@ -82,7 +82,7 @@ export class LinegraphComponent implements OnInit {
     };
     console.log('hii');
     const self = this,
-          chart = this.chart;
+      chart = this.chart;
 
     chart.showLoading();
     setTimeout(() => {
@@ -104,32 +104,6 @@ export class LinegraphComponent implements OnInit {
     }, 2000);
   }
 
-  // updateChartTotal() {
-  //   this.chartCallback = (chart: any) => {
-  //     self.chart2 = chart;
-  //   };
-  //   console.log('kii');
-  //   const self = this,
-  //     chart2 = this.chart2;
-
-  //   chart2.showLoading();
-  //   setTimeout(() => {
-  //     chart2.hideLoading();
-  //     let rendom = Math.floor(Math.random() * 10 + 1);
-  //     console.log(rendom);
-  //     let tempSer = [10, 25, 20, 6];
-  //     tempSer.push(rendom);
-  //     let rend1 = Math.floor(Math.random() * 10 + 1);
-  //     tempSer.push(rend1);
-  //     self.chartOptionsTotal.series = [
-  //       {
-  //         data: tempSer,
-  //       },
-  //     ];
-
-  //     self.updateFlag = true;
-  //   }, 2000);
-  // }
   ranges: any = {
     Today: [moment(), moment()],
     Yesterday: [moment().subtract(1, 'days'), moment().subtract(1, 'days')],

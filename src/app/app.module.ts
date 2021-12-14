@@ -15,7 +15,6 @@ import { ConnectorsComponent } from './tabs/connectors/connectors.component';
 import { DataComponent } from './data/data.component';
 import { DatametrixComponent } from './tabs/datametrix/datametrix.component';
 import { LinegraphComponent } from './tabs/datametrix/linegraph/linegraph.component';
-import { LinegraphsComponent } from './tabs/datametrix/linegraphs/linegraphs.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +26,7 @@ import { LinegraphsComponent } from './tabs/datametrix/linegraphs/linegraphs.com
     DataComponent,
     DatametrixComponent,
     LinegraphComponent,
-    LinegraphsComponent
+    
   ],
   imports: [
     BrowserModule,
